@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: visible;
+    position: fixed;
+    width: 300px;
+}
+.logo{
+    padding: 30px 40px 30px 30px;
+    stroke: white;
+    fill: white;
+}
+#Layer_1 {
+    width:100px;
+}
+
+#container {
+    height: 100%;
+    /*background-color: aqua;*/
+}
+
+#header {
+    height: 15%;
+    width: 50%;
+    /*background-color: red;*/
+    position: fixed;
+    display: flex;
+    backdrop-filter: blur(5px);
+    z-index: 0;
+    color: white;
+    transition-property: color;
+}
+
+.light-mode-toggle{
+    position: fixed;
+    top: 90%;
+    left: 4%;
+    font-family: "Red Hat Display";
+    font-size: larger;
+    font-weight: 400;
+    color: white;
+    visibility: visible;
+    opacity: 1;
+    cursor: default;
+}
+
+.dark-mode-toggle{
+    position: fixed;
+    top: 90%;
+    left: 4%;
+    font-family: "Red Hat Display";
+    font-size: larger;
+    font-weight: 400;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    cursor: default;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.gd-section {
+    width: 50%;
+    height: 100%;
+}
+
+.gd-example-1 {
+    width: 300px;
+    transform: scale(0.9);
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    filter: blur(5px);
+}
+
+.gd-example-2 {
+    width: 100px;
+    transform: scale(2);
+    position: absolute;
+    filter: blur(2px);
+    left: 45%;
+    top: 40%;
+    z-index: 0;
+}
+
+.gd-example-3 {
+    width: 100px;
+    transform: scale(0.8);
+    position: absolute;
+    left: 55%;
+    top: 80%;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+.gd-text {
+    font-family: "Red Hat Display";
+    font-size: large;
+    position: absolute;
+    width: 310px;
+    top: 30%;
+    left: 20%;
+    color: white;
+    visibility: hidden;
+}
+
+.gd-example-4{
+    position: absolute;
+    height: fit-content;
+    transform: scale(1.0);
+    left: 80%;
+    top: 50%;
+    filter: blur(4px);
+    z-index: 0;
+}
+
+.gd-example-5 {
+    position: absolute;
+    transform: scale(4.5);
+    left: 65%;
+    top: 25%;
+    filter: blur(2px);
+}
+
+.gd-example-6 {
+    position: absolute;
+    transform: scale(4.5);
+    left: 65%;
+    top: 25%;
+    filter: blur(2px);
+    opacity: 0;
+}
+
+.about {
+    width: 50%;
+    height: 100%;
+}
+
+.about-text {
+    font-family: "Red Hat Display";
+    font-size: large;
+    position: relative;
+    left: 40%;
+    top: 25%;
+    width: 20%;
+}
+
+.services-offered {
+    font-family: "Red Hat Display";
+    font-size: large;
+    position: relative;
+    left: 40%;
+    top: 30%;
+    width: 20%;
+}
+
+.contact-info {
+    font-family: "Red Hat Display";
+    font-size: large;
+    position: relative;
+    left: 40%;
+    top: 35%;
+    width: 20%;
+}
+
+.about-light-mode {
+    color: black;
+    transition: 0.3s;
+}
+
+.about-dark-mode {
+    color: white;
+    transition: 0.3s;
+}
+
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    line-height: 0;
+}
+
+p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+}
+
+.hideText {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.showText {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.gde5-unBlur{
+    filter: blur(0px);
+    transition-duration: 0.3s;
+}
+
+.gde1-unBlur{
+    filter: blur(0px);
+    transition-duration: 0.3s;
+}
+
+.gde1-blur {
+    filter: blur(5px);
+    transition-duration: 0.3s;
+}
+
+.gde2-unBlur{
+    transform: scale(2.5);
+    filter: blur(0px);
+    transition-duration: 0.3s;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.gde2-blur {
+    filter: blur(2px);
+    transition-duration: 0.3s;
+}
+
+.gde3-unBlur{
+    transition-duration: 0.3s;
+    filter: blur(0px);
+    transform: scale(1.5);
+}
+
+.gde3-blur {
+    filter: blur(10px);
+    transition-duration: 0.3s;
+}
+
+.gde4-unBlur{
+    transition-duration: 0.3s;
+    filter: blur(0px);
+    transform: scale(3);
+}
+
+.gde4-blur {
+    filter: blur(4px);
+    transition-duration: 0.3s;
+}
+
+.gde5-blur {
+    filter: blur(2px);
+    transition-duration: 0.3s;
+}
+
+.gde6-unBlur{
+    filter: blur(0px);
+    transition-duration: 0.3s;
+}
+
+.gde6-blur {
+    filter: blur(2px);
+    transition-duration: 0.3s;
+}
+
+.bg-light-mode {
+    transition-duration: 0.3s;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 200%;
+}
+
+.bg-dark-mode {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 200%;
+    transition-duration: 0.3s;
+}
+
+.text-light-mode {
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.text-dark-mode {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.logo-light-mode {
+    fill: black;
+    stroke: black;
+    transition-duration: 0.3s;
+}
+
+.logo-dark-mode {
+    fill: white;
+    stroke: white;
+    transition-duration: 0.3s;
+}
+
+.gde5-dark-mode {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.gde5-light-mode {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.gde6-dark-mode {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.gde6-light-mode {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.light-mode-toggle-to-light-mode {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.light-mode-toggle-to-dark-mode {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.dark-mode-toggle-to-light-mode {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.dark-mode-toggle-to-dark-mode {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
