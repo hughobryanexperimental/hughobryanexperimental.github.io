@@ -149,12 +149,12 @@ html{
     font-weight: 500;
     cursor: default;
 }
-@media only screen and (max-width: 860px){
+@media only screen and (min-width: 860px){
     #sections-wide {
         display: none;
     }
 }
-@media only screen and (max-width: 0px) and (min-width: 861px){
+@media only screen and (max-width: 861px){
     #sections-small {
         display: none;
     }
