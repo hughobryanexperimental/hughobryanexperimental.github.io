@@ -1,3 +1,4 @@
+if (window.screen.width)
 function sectionSmallMenuOn(){
     document.getElementById("sections-small-menu").classList.add("sections-small-menu-visible")
     document.getElementById("sections-small-menu").classList.remove("sections-small-menu-invisible")
