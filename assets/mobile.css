@@ -1,0 +1,18 @@
+/* Set Up */
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 400%;
+    background-color: aqua;
+    opacity: 1;
+}
+#container {
+    height: 100%;
+}
+/* End Set Up*/
