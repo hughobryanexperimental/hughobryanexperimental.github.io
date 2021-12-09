@@ -1,0 +1,193 @@
+/* Set Up */
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 400%;
+    /*background-color: aqua;*/
+    opacity: 1;
+}
+#container {
+    height: 100%;
+
+}
+/* End Set Up*/
+/* Header */
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    min-width: 492px;
+    min-height: 144.8px;
+}
+#brand{
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    transition-property: color;
+    width: 50%;
+    min-width: 415px;
+    height: 100%;
+}
+#logo{
+    height: 100%;
+    width: auto;
+}
+#logo-svg{
+    padding: 30px 40px 30px 30px;
+    height: 100%;
+    stroke: black;
+    fill: black;
+}
+#name {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    left: 145px;
+}
+#sections-wide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    width: 50%;
+    min-width: 168px;
+    height: 100%;
+    margin-right: 70px;
+}
+#sections-small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 170px;
+}
+.sections-small-button-1{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: inherit;
+    border: 3px solid black;
+    border-radius: 50%;
+    right: 70px;
+    top: 61px;
+    z-index: 3;
+}
+#sections-small-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    display: flex;
+    z-index: 10;
+}
+.sections-small-button-2{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 50%;
+    right: 70px;
+    top: 61px;
+    z-index: 2;
+}
+.sections-small-menu-visible {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+.sections-small-menu-invisible {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+#titles-1 {
+    position: fixed;
+    top: 50%;
+    margin-top: -168px;
+    display: flex;
+    justify-content: center;
+}
+#titles-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 700%;
+}
+.section-title-1{
+    font-family: 'Red Hat Display', sans-serif;
+    min-width: 120.67px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+}
+.section-title-2{
+    font-family: 'Red Hat Display', sans-serif;
+    min-width: 120.67px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+.section-title-1:hover{
+    font-weight: 500;
+    cursor: default;
+}
+.section-title-2:hover{
+    font-weight: 500;
+    cursor: default;
+}
+@media only screen and (max-width: 860px){
+    #sections-wide {
+        display: none;
+    }
+}
+@media only screen and (min-width: 861px){
+    #sections-small {
+        display: none;
+    }
+}
+/* End Header */
+
+/* Sections */
+.gd-example-1-div {
+    position: absolute;
+    width: 14vw;
+    height: 14vh;
+    top: 60%;
+    left: 10%;
+    -webkit-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: none;
+}
+.gd-example-1-svg {
+    height: 85%;
+}
+/* End Sections */
+/* Text */
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+/* End Text */
+
+/*Modification Classes */
+.unblur{
+    -webkit-filter: blur(0px);
+    transition-duration: 1s;
+}
