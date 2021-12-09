@@ -74,8 +74,8 @@ html{
 }
 .sections-small-button-1{
     position: fixed;
-    height: 30px;
-    width: 30px;
+    height: 10%;
+    width: 10%;
     background-color: inherit;
     border: 3px solid black;
     border-radius: 50%;
