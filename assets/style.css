@@ -149,7 +149,7 @@ html{
     font-weight: 500;
     cursor: default;
 }
-@media screen and (max-width: 861px) {
+@media only screen and (max-width: 861px) {
     #sections-small {
         display: flex;
     }
@@ -157,7 +157,7 @@ html{
         display: none;
     }
 }
-@media screen and (min-width: 860px) {
+@media only screen and (min-width: 860px) {
     #sections-small {
         display: none;
     }
