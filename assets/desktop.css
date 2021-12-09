@@ -149,7 +149,7 @@ html{
     font-weight: 500;
     cursor: default;
 }
-@media only screen and (min-aspect-ratio: 12 / 10) {
+@media only screen and (max-aspect-ratio: 12 / 10) {
     #sections-small {
         display: flex;
     }
@@ -157,7 +157,7 @@ html{
         display: none;
     }
 }
-@media only screen and (max-aspect-ratio: 12 / 10) {
+@media only screen and (min-aspect-ratio: 12 / 10) {
     #sections-small {
         display: none;
     }
