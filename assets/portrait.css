@@ -62,14 +62,25 @@ html{
     align-items: center;
 }
 .portrait-sections-button-1 {
-    height: 10vh;
-    width: 10vh;
+    position: fixed;
+    height: 5vh;
+    width: 5vh;
     background-color: inherit;
-    border: 7px solid black;
+    border: 5px solid black;
     border-radius: 50%;
-    right: 70px;
-    top: 61px;
     z-index: 3;
+    top: 4.5vh;
+    right: 4.5vh;
+}
+.portrait-sections-button-2{
+    position: fixed;
+    height: 5vh;
+    width: 5vh;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 3;
+    top: 4.5vh;
+    right: 4.5vh;
 }
 #portrait-sections-menu {
     position: fixed;
@@ -79,17 +90,6 @@ html{
     backdrop-filter: blur(5px);
     justify-content: center;
     z-index: 10;
-}
-.portrait-sections-button-2{
-    position: fixed;
-    height: 30px;
-    width: 30px;
-    background-color: black;
-    border: 3px solid black;
-    border-radius: 50%;
-    right: 70px;
-    top: 61px;
-    z-index: 2;
 }
 .portrait-sections-menu-visible {
     visibility: visible;
