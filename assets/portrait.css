@@ -58,15 +58,14 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
     min-width: 170px;
+    align-items: center;
 }
 .portrait-sections-button-1 {
-    position: fixed;
     height: 10vh;
     width: 10vh;
     background-color: inherit;
-    border: 3px solid black;
+    border: 7px solid black;
     border-radius: 50%;
     right: 70px;
     top: 61px;
