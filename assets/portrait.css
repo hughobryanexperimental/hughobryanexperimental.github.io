@@ -128,6 +128,9 @@ html{
     font-weight: 500;
     cursor: default;
 }
+#sections-landscape {
+    display: none;
+}
 /* End Header */
 
 /* Sections */

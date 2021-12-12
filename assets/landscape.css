@@ -54,7 +54,7 @@ html{
     align-items: center;
     left: 300%;
 }
-#sections-wide{
+#sections-landscape{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,69 +65,7 @@ html{
     height: 100%;
     margin-right: 70px;
 }
-#sections-small{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    min-width: 170px;
-}
-.sections-small-button-1{
-    position: fixed;
-    height: 10%;
-    width: 10%;
-    background-color: inherit;
-    border: 3px solid black;
-    border-radius: 50%;
-    right: 70px;
-    top: 61px;
-    z-index: 3;
-}
-#sections-small-menu {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    justify-content: center;
-    display: flex;
-    z-index: 10;
-}
-.sections-small-button-2{
-    position: fixed;
-    height: 30px;
-    width: 30px;
-    background-color: black;
-    border: 3px solid black;
-    border-radius: 50%;
-    right: 70px;
-    top: 61px;
-    z-index: 2;
-}
-.sections-small-menu-visible {
-    visibility: visible;
-    opacity: 1;
-    transition-duration: 0.3s;
-}
-.sections-small-menu-invisible {
-    visibility: hidden;
-    opacity: 0;
-    transition-duration: 0.3s;
-}
-#titles-1 {
-    position: fixed;
-    top: 50%;
-    margin-top: -168px;
-    display: flex;
-    justify-content: center;
-}
-#titles-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 700%;
-}
-.section-title-1{
+.section-landscape-title{
     font-family: 'Red Hat Display', sans-serif;
     min-width: 130px;
     text-decoration: none;
@@ -135,23 +73,14 @@ html{
     font-weight: 400;
     font-size: 17px;
 }
-.section-title-2{
-    font-family: 'Red Hat Display', sans-serif;
-    min-width: 120.67px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    font-size: 30px;
-}
-.section-title-1:hover{
+.section-landscape-title:hover{
     font-weight: 500;
     cursor: default;
 }
-.section-title-2:hover{
-    font-weight: 500;
-    cursor: default;
+#sections-portrait-menu {
+    display: none;
 }
-@media only screen and (max-aspect-ratio: 10 / 12) {
+/*@media only screen and (max-aspect-ratio: 10 / 12) {
     #sections-small {
         display: flex;
     }
@@ -166,7 +95,7 @@ html{
     #sections-wide {
         display: flex;
     }
-}
+}*/
 /* End Header */
 
 /* Sections */
