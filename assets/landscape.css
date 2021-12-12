@@ -80,22 +80,6 @@ html{
 #sections-portrait-menu, #sections-portrait {
     display: none;
 }
-/*@media only screen and (max-aspect-ratio: 10 / 12) {
-    #sections-small {
-        display: flex;
-    }
-    #sections-wide {
-        display: none;
-    }
-}
-@media only screen and (min-aspect-ratio: 10 / 12) {
-    #sections-small {
-        display: none;
-    }
-    #sections-wide {
-        display: flex;
-    }
-}*/
 /* End Header */
 
 /* Sections */
