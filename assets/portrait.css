@@ -54,14 +54,14 @@ html{
     align-items: center;
     left: 300%;
 }
-#sections-portrait{
+#portrait-sections{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     min-width: 170px;
 }
-.sections-portrait-button-1{
+.portrait-sections-button-1 {
     position: fixed;
     height: 10vh;
     width: 10vh;
@@ -72,17 +72,16 @@ html{
     top: 61px;
     z-index: 3;
 }
-#sections-portrait-menu {
+#portrait-sections-menu {
     position: fixed;
     width: 100vw;
     height: 100vh;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     justify-content: center;
-    display: flex;
     z-index: 10;
 }
-.sections-portrait-button-2{
+.portrait-sections-button-2{
     position: fixed;
     height: 30px;
     width: 30px;
@@ -93,13 +92,15 @@ html{
     top: 61px;
     z-index: 2;
 }
-.sections-portrait-menu-visible {
+.portrait-sections-menu-visible {
     visibility: visible;
+    display: flex;
     opacity: 1;
     transition-duration: 0.3s;
 }
-.sections-portrait-menu-invisible {
+.portrait-sections-menu-invisible {
     visibility: hidden;
+    display: none;
     opacity: 0;
     transition-duration: 0.3s;
 }
@@ -107,8 +108,11 @@ html{
     position: fixed;
     top: 50%;
     margin-top: -168px;
+    left: 50%;
+    margin-left: -115px;
     display: flex;
     justify-content: center;
+    width: 230px;
 }
 #portrait-sections-2 {
     display: flex;

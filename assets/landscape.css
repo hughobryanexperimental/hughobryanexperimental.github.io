@@ -77,7 +77,7 @@ html{
     font-weight: 500;
     cursor: default;
 }
-#sections-portrait-menu, #sections-portrait {
+#portrait-sections-menu, #portrait-sections {
     display: none;
 }
 /* End Header */
