@@ -1,12 +1,9 @@
 if (window.screen.width)
 function sectionSmallMenuOn(){
-    document.getElementById("portrait-sections-menu").classList.add("sections-small-menu-visible")
-    document.getElementById("portrait-sections-menu").classList.remove("sections-small-menu-invisible")
-    console.log("True")
+    document.getElementById("portrait-sections-menu").style.display = "flex";
 }
 function sectionSmallMenuOff(){
-    document.getElementById("portrait-sections-menu").classList.remove("sections-small-menu-visible")
-    document.getElementById("portrait-sections-menu").classList.add("sections-small-menu-invisible")
+    document.getElementById("portrait-sections-menu").style.display = "none";
 }
 function unBlur(inp){
     let list = document.getElementsByClassName(inp)
