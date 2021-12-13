@@ -63,14 +63,11 @@ html{
 }
 .portrait-sections-button-1 {
     position: fixed;
-    height: 5vh;
-    width: 5vh;
     background-color: inherit;
-    border: 5px solid black;
-    border-radius: 50%;
     z-index: 3;
-    top: 4.5vh;
-    right: 4.5vh;
+    fill: white;
+    width: 5vw;
+    top: 6vh;
 }
 .portrait-sections-button-2{
     position: fixed;
