@@ -56,28 +56,25 @@ html{
 }
 #portrait-sections{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 170px;
     align-items: center;
+    min-width: 170px;
 }
 .portrait-sections-button-1 {
     position: fixed;
     background-color: inherit;
     z-index: 3;
     fill: white;
-    width: 5vw;
-    top: 6vh;
+    width: 60px;
+    height: 60px;
+    right: 10vw;
 }
 .portrait-sections-button-2{
     position: fixed;
-    height: 5vh;
-    width: 5vh;
-    background-color: black;
-    border-radius: 50%;
+    align-items: center;
     z-index: 3;
-    top: 4.5vh;
-    right: 4.5vh;
+    width: 60px;
+    height: 60px;
+    right: 10vw;
 }
 #portrait-sections-menu {
     position: fixed;
@@ -149,6 +146,7 @@ html{
 .gd-example-1-svg {
     height: 85%;
 }
+
 /* End Sections */
 /* Text */
 h1{

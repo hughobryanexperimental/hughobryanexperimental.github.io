@@ -9,7 +9,7 @@ html,body{
 }
 html{
     width: 400%;
-    /*background-color: aqua;*/
+    background-color: white;
     opacity: 1;
 }
 #container {
@@ -26,8 +26,10 @@ html{
     height: 12%;
     min-width: 492px;
     min-height: 144.8px;
+    z-index: 2;
 }
 #brand{
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -37,22 +39,40 @@ html{
     min-width: 415px;
     height: 100%;
 }
-#logo{
+.logo-div{
+    position: relative;
     height: 100%;
-    width: auto;
+    width: 145px;
+    transform: translateX(44vw) translateY(40vh) scale(2);
+    transition-duration: 0.7s, 0.7s;
+    transition-property: transform, -webkit-filter;
+    transition-timing-function: ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
 }
-#logo-svg{
+.logo-move{
+    transform: translateX(0) translateY(0) scale(1);
+}
+.logo-svg{
+    position: relative;
     /*padding: 30px 40px 30px 30px;*/
     padding: 20% 30% 20% 20%;
     height: 100%;
     stroke: black;
     fill: black;
 }
-#name {
+.name {
     height: 100%;
     display: flex;
     align-items: center;
     left: 300%;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
 }
 #sections-landscape{
     display: flex;
@@ -65,17 +85,59 @@ html{
     height: 100%;
     margin-right: 70px;
 }
-.section-landscape-title{
+.landscape-gd-title-div{
+    width: 150px;
+    height: 50px;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+}
+.landscape-gd-title {
     font-family: 'Red Hat Display', sans-serif;
-    min-width: 130px;
     text-decoration: none;
     text-align: center;
+    line-height: 50px;
     font-weight: 400;
     font-size: 17px;
 }
-.section-landscape-title:hover{
-    font-weight: 500;
-    cursor: default;
+.landscape-ui-title-div{
+    width: 150px;
+    height: 50px;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+}
+.landscape-ui-title{
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+    font-size: 17px;
+}
+.landscape-id-title-div{
+    width: 150px;
+    height: 50px;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+}
+.landscape-id-title{
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+    font-size: 17px;
 }
 #portrait-sections-menu, #portrait-sections {
     display: none;
@@ -83,19 +145,105 @@ html{
 /* End Header */
 
 /* Sections */
-.gd-example-1-div {
+.gd-example-div-1 {
     position: absolute;
-    width: 14vw;
-    height: 14vh;
+    width: 20vw;
+    height: 20vh;
     top: 60%;
     left: 10%;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: none;
 }
-.gd-example-1-svg {
+.gd-example-svg-1 {
+    height: 85%;
+}
+.gd-example-div-2 {
+    position: absolute;
+    width: 25vw;
+    height: 25vh;
+    top: 15%;
+    left: 40%;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.gd-example-svg-2 {
+    width: 85%;
+    height: 85%;
+    z-index: 0;
+}
+.gd-example-div-3 {
+    position: absolute;
+    width: 20vw;
+    height: 8vh;
+    top: 55%;
+    left: 50%;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-3 {
+    width: 85%;
+    height: 85%;
+}
+.gd-example-div-4 {
+    position: absolute;
+    width: 12vw;
+    height: 15vh;
+    top: 80%;
+    left: 45%;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-4 {
+    width: 85%;
+    height: 85%;
+}
+.gd-example-div-5 {
+    position: absolute;
+    width: 25vw;
+    height: 10vh;
+    top: 23%;
+    left: 5%;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-5 {
+    width: 85%;
     height: 85%;
 }
 /* End Sections */
@@ -105,10 +253,23 @@ h1{
     font-weight: 500;
     font-variant: small-caps;
 }
+.bold-title {
+    font-weight: 500;
+}
 /* End Text */
 
 /*Modification Classes */
-.unblur{
+.unBlur{
     -webkit-filter: blur(0px);
-    transition-duration: 1s;
+    z-index: 0;
+}
+.blur{
+    -webkit-filter: blur(5px);
+}
+.moreBlur{
+    -webkit-filter: blur(10px);
+}
+.invisible {
+    visibility: hidden;
+    opacity: 0;
 }
