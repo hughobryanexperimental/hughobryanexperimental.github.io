@@ -173,7 +173,7 @@ function osbClick() {
 }
 function euhClick() {
     if (whatsClicked === 12) {
-        euhFocus(0);
+        euhFocus(0)
         whatsClicked = 0; //00
     } else {
         euhFocus(1);
