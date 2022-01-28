@@ -210,8 +210,8 @@ html{
 }
 .gd-example-div-3 {
     position: absolute;
-    width: 20vw;
-    height: 10vh;
+    width: 23vw;
+    height: 13vh;
     top: 45%;
     left: 30%;
     transition-duration: 0.3s, 0.7s, 0.7s;
@@ -225,7 +225,7 @@ html{
     justify-content: center;
 }
 .gd-example-svg-3 {
-    width: 85%;
+    width: 75%;
 }
 .gd-example-div-4 {
     position: absolute;
