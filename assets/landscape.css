@@ -1,11 +1,13 @@
 /* Set Up */
 *{
     box-sizing: border-box;
+    cursor: default;
 }
 
 html,body{
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 html{
     width: 400%;
@@ -14,6 +16,7 @@ html{
 }
 #container {
     height: 100%;
+    z-index: 0;
 }
 /* End Set Up*/
 /* Header */
@@ -38,21 +41,25 @@ html{
     width: 50%;
     min-width: 415px;
     height: 100%;
+    z-index: 2;
 }
 .logo-div{
     position: relative;
-    height: 100%;
-    width: 145px;
-    transform: translateX(44vw) translateY(40vh) scale(2);
+    width: 290px;
+    height: 290px;
+    transform: translateX(41.5vw) translateY(38vh) scale(1);
     transition-duration: 0.7s, 0.7s;
     transition-property: transform, -webkit-filter;
     transition-timing-function: ease, ease;
     -webkit-filter: blur(5px);
     visibility: visible;
     opacity: 1;
+    z-index: 2;
 }
 .logo-move{
     transform: translateX(0) translateY(0) scale(1);
+    width: 145px;
+    height: 100%;
 }
 .logo-svg{
     position: relative;
@@ -61,6 +68,7 @@ html{
     height: 100%;
     stroke: black;
     fill: black;
+    z-index: 2;
 }
 .name {
     height: 100%;
@@ -73,6 +81,18 @@ html{
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
+}
+.click {
+    position: absolute;
+    width: 150px;
+    left: 46.7vw;
+    top: 55vh;
+    transition-duration: 2.5s, 0.7s;
+    transition-property: -webkit-filter, opacity;
+    transition-timing-function: ease, ease;
+    -webkit-filter: blur(75px);
+    opacity: 1;
+    font-size: 13px;
 }
 #sections-landscape{
     display: flex;
@@ -87,25 +107,26 @@ html{
 }
 .landscape-gd-title-div{
     width: 150px;
-    height: 50px;
+    height: 100px;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(5px);
     visibility: visible;
     opacity: 1;
+    z-index: 10;
 }
 .landscape-gd-title {
     font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
     font-weight: 400;
     font-size: 17px;
 }
 .landscape-ui-title-div{
     width: 150px;
-    height: 50px;
+    height: 100px;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -117,13 +138,13 @@ html{
     font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
     font-weight: 400;
     font-size: 17px;
 }
 .landscape-id-title-div{
     width: 150px;
-    height: 50px;
+    height: 100px;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -135,7 +156,7 @@ html{
     font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
     font-weight: 400;
     font-size: 17px;
 }
@@ -148,9 +169,9 @@ html{
 .gd-example-div-1 {
     position: absolute;
     width: 20vw;
-    height: 20vh;
+    height: 25vh;
     top: 60%;
-    left: 10%;
+    left: 7%;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -162,14 +183,15 @@ html{
     justify-content: center;
 }
 .gd-example-svg-1 {
-    height: 85%;
+    width: 55%;
+    z-index: 1;
 }
 .gd-example-div-2 {
     position: absolute;
-    width: 25vw;
-    height: 25vh;
-    top: 15%;
-    left: 40%;
+    width: 28vw;
+    height: 28vh;
+    top: 10%;
+    left: 45%;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -182,16 +204,16 @@ html{
     z-index: 0;
 }
 .gd-example-svg-2 {
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
     z-index: 0;
 }
 .gd-example-div-3 {
     position: absolute;
     width: 20vw;
-    height: 8vh;
-    top: 55%;
-    left: 50%;
+    height: 10vh;
+    top: 45%;
+    left: 30%;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -204,14 +226,13 @@ html{
 }
 .gd-example-svg-3 {
     width: 85%;
-    height: 85%;
 }
 .gd-example-div-4 {
     position: absolute;
-    width: 12vw;
-    height: 15vh;
-    top: 80%;
-    left: 45%;
+    width: 18vw;
+    height: 21vh;
+    top: 70%;
+    left: 35%;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -223,13 +244,13 @@ html{
     justify-content: center;
 }
 .gd-example-svg-4 {
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
 }
 .gd-example-div-5 {
     position: absolute;
-    width: 25vw;
-    height: 10vh;
+    width: 28vw;
+    height: 15vh;
     top: 23%;
     left: 5%;
     transition-duration: 0.3s, 0.7s, 0.7s;
@@ -243,8 +264,8 @@ html{
     justify-content: center;
 }
 .gd-example-svg-5 {
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 70%;
 }
 /* End Sections */
 /* Text */
@@ -253,8 +274,9 @@ h1{
     font-weight: 500;
     font-variant: small-caps;
 }
-.bold-title {
-    font-weight: 500;
+h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
 }
 /* End Text */
 
@@ -267,9 +289,12 @@ h1{
     -webkit-filter: blur(5px);
 }
 .moreBlur{
-    -webkit-filter: blur(10px);
+    -webkit-filter: blur(15px);
 }
 .invisible {
     visibility: hidden;
+    opacity: 0;
+}
+.noOpacity {
     opacity: 0;
 }
