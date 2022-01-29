@@ -73,7 +73,7 @@ function gdSvg1UnHover() {
     whatsHovered = 0; //00
     if (whatsClicked === 0) {
         document.getElementsByClassName("gd-example-svg-1").item(0).removeEventListener('click', osbClick);
-        allBlur();
+        returnBlur();
     }
 }
 /* End of GD SVG 1 */
@@ -89,7 +89,7 @@ function gdSvg2UnHover() {
     whatsHovered = 0; //00
     if (whatsClicked === 0) {
         document.getElementsByClassName("gd-example-svg-2").item(0).removeEventListener('click', osbClick);
-        allBlur();
+        returnBlur();
     }
 }
 /* End of GD SVG 2 */
@@ -105,7 +105,7 @@ function gdSvg3UnHover() {
     whatsHovered = 0; //00
     if (whatsClicked === 0) {
         document.getElementsByClassName("gd-example-svg-3").item(0).removeEventListener('click', euhClick);
-        allBlur();
+        returnBlur();
     }
 }
 /* End of GD SVG 3 */
@@ -121,7 +121,7 @@ function gdSvg4UnHover() {
     whatsHovered = 0; //00
     if (whatsClicked === 0) {
         document.getElementsByClassName("gd-example-svg-4").item(0).removeEventListener('click', euhClick);
-        allBlur();
+        returnBlur();
     }
 }
 /* End of GD SVG 4 */
