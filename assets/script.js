@@ -164,6 +164,7 @@ function uiTitleHover() {
     whatsHovered = 20;
     document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick);
     if (whatsClicked === 0) {
+        allBlur();
         uiUnBlur();
         gdMoreBlur();
         idMoreBlur();
@@ -173,6 +174,25 @@ function uiTitleUnHover() {
     whatsHovered = 0; //00
     if (whatsClicked === 0) {
         document.getElementsByClassName("landscape-ui-title-div").item(0).removeEventListener('click', uiTitleClick);
+        returnBlur();
+    }
+}
+/* End of GD Title 20 */
+/* Start of UI Title 30 */
+function idTitleHover() {
+    whatsHovered = 30;
+    document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('click', idTitleClick);
+    if (whatsClicked === 0) {
+        removeBlur();
+        gdMoreBlur();
+        uiMoreBlur();
+        idUnBlur();
+    }
+}
+function idTitleUnHover() {
+    whatsHovered = 0; //00
+    if (whatsClicked === 0) {
+        document.getElementsByClassName("landscape-id-title-div").item(0).removeEventListener('click', idTitleClick);
         returnBlur();
     }
 }
@@ -215,7 +235,13 @@ function uiTitleClick() {
     }
 }
 function idTitleClick() {
-
+    if (whatsClicked === 30) {
+        idFocus(0);
+        whatsClicked = 0; //00
+    } else {
+        idFocus(1);
+        whatsClicked = 30;
+    }
 }
 function returnBlur() {
     switch(whatsHovered) {
@@ -293,8 +319,6 @@ function removeBlur() {
 }
 function gdUnBlur() {
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add("unBlur");
-    document.getElementsByClassName("landscape-ui-title-div").item(0).classList.add("moreBlur");
-    document.getElementsByClassName("landscape-id-title-div").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-1").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-2").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-3").item(0).classList.add("unBlur");
@@ -304,7 +328,9 @@ function gdUnBlur() {
 function uiUnBlur() {
     document.getElementsByClassName("landscape-ui-title-div").item(0).classList.add("unBlur");
 }
-function idUnBlur(){}
+function idUnBlur(){
+    document.getElementsByClassName("landscape-id-title-div").item(0).classList.add("unBlur");
+}
 function gdMoreBlur(){
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-1").item(0).classList.add("moreBlur");
@@ -314,7 +340,7 @@ function gdMoreBlur(){
     document.getElementsByClassName("gd-example-div-5").item(0).classList.add("moreBlur");
 }
 function uiMoreBlur(){
-
+    document.getElementsByClassName("landscape-ui-title-div").item(0).classList.add("moreBlur");
 }
 function idMoreBlur(){
     document.getElementsByClassName("landscape-id-title-div").item(0).classList.add("moreBlur");
@@ -376,17 +402,35 @@ function uiFocus(inp) {
         returnBlur();
     }
 }
+function idFocus(inp){
+    if (inp === 1) {
+        removeAllHovers();
+        addAllIdHovers();
+        document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('click', gdTitleClick)
+        document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick)
+        removeBlur();
+        gdMoreBlur();
+        uiMoreBlur();
+        idUnBlur();
+    } else if (inp === 0) {
+        returnBlur();
+    }
+}
 function removeAllTitleHovers() {
     document.getElementsByClassName("landscape-gd-title-div").item(0).removeEventListener('mouseenter', gdTitleHover);
     document.getElementsByClassName("landscape-gd-title-div").item(0).removeEventListener('mouseleave', gdTitleUnHover);
     document.getElementsByClassName("landscape-ui-title-div").item(0).removeEventListener('mouseenter', uiTitleHover);
     document.getElementsByClassName("landscape-ui-title-div").item(0).removeEventListener('mouseleave', uiTitleUnHover);
+    document.getElementsByClassName("landscape-id-title-div").item(0).removeEventListener('mouseenter', idTitleHover);
+    document.getElementsByClassName("landscape-id-title-div").item(0).removeEventListener('mouseleave', idTitleUnHover);
 }
 function addAllTitleHovers() {
     document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseenter', gdTitleHover);
     document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseleave', gdTitleUnHover);
     document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('mouseenter', uiTitleHover);
     document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('mouseleave', uiTitleUnHover);
+    document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('mouseenter', idTitleHover);
+    document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('mouseleave', idTitleUnHover);
 }
 function removeAllHovers() {
     document.getElementsByClassName("gd-example-svg-1").item(0).removeEventListener('mouseenter', gdSvg1Hover);
@@ -427,13 +471,9 @@ function addAllGdHovers() {
 function addAllUiHovers(){
 }
 function addAllIdHovers(){
-
-}
-function addAllTitleClicks(){
-    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('click', gdTitleClick)
-    document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick)
 }
 function removeAllTitleClicks(){
     document.getElementsByClassName("landscape-gd-title-div").item(0).removeEventListener('click', gdTitleClick)
     document.getElementsByClassName("landscape-ui-title-div").item(0).removeEventListener('click', uiTitleClick)
+    document.getElementsByClassName("landscape-id-title-div").item(0).removeEventListener('click', idTitleClick)
 }
