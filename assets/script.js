@@ -63,11 +63,13 @@ let whatsHovered = 0;
 let whatsClicked = 0;
 /* Start of GD SVG 1 */
 function gdSvg1Hover() {
-    if (whatsClicked === 0 || whatsClicked === 11 || whatsClicked === 12) {
+    //if (whatsClicked === 0 || whatsClicked === 11 || whatsClicked === 12) {
         whatsHovered = 11;
         document.getElementsByClassName("gd-example-svg-1").item(0).addEventListener('click', osbClick);
         gdUnBlur();
-    }
+        uiMoreBlur();
+        idMoreBlur();
+    //}
 }
 function gdSvg1UnHover() {
     whatsHovered = 0; //00
@@ -83,6 +85,8 @@ function gdSvg2Hover() {
         whatsHovered = 12;
         document.getElementsByClassName("gd-example-svg-2").item(0).addEventListener('click', osbClick);
         gdUnBlur();
+        uiMoreBlur();
+        idMoreBlur();
     //}
 }
 function gdSvg2UnHover() {
@@ -99,6 +103,8 @@ function gdSvg3Hover() {
         whatsHovered = 13;
         document.getElementsByClassName("gd-example-svg-3").item(0).addEventListener('click', euhClick);
         gdUnBlur();
+        uiMoreBlur();
+        idMoreBlur();
     //}
 }
 function gdSvg3UnHover() {
@@ -115,6 +121,8 @@ function gdSvg4Hover() {
         whatsHovered = 14;
         document.getElementsByClassName("gd-example-svg-4").item(0).addEventListener('click', euhClick);
         gdUnBlur();
+        uiMoreBlur();
+        idMoreBlur();
     //}
 }
 function gdSvg4UnHover() {
@@ -131,6 +139,8 @@ function gdSvg5Hover() {
         whatsHovered = 15;
         document.getElementsByClassName("gd-example-svg-5").item(0).addEventListener('click', euhClick);
         gdUnBlur();
+        uiMoreBlur();
+        idMoreBlur();
     //}
 }
 function gdSvg5UnHover() {
@@ -146,8 +156,8 @@ function gdTitleHover() {
     whatsHovered = 10;
     document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('click', gdTitleClick);
     if (whatsClicked === 0) {
-        uiMoreBlur();
         gdUnBlur();
+        uiMoreBlur();
         idMoreBlur();
     }
 }
@@ -290,6 +300,9 @@ function allBlur() {
     document.getElementsByClassName("gd-example-div-3").item(0).classList.add("Blur");
     document.getElementsByClassName("gd-example-div-4").item(0).classList.add("Blur");
     document.getElementsByClassName("gd-example-div-5").item(0).classList.add("Blur");
+    document.getElementsByClassName("coming-soon").item(0).classList.remove("unBlur");
+    document.getElementsByClassName("coming-soon").item(0).classList.add("invisible");
+
 }
 function removeBlur() {
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.remove("moreBlur");
@@ -327,9 +340,13 @@ function gdUnBlur() {
 }
 function uiUnBlur() {
     document.getElementsByClassName("landscape-ui-title-div").item(0).classList.add("unBlur");
+    document.getElementsByClassName("coming-soon").item(0).classList.add("unBlur");
+    document.getElementsByClassName("coming-soon").item(0).classList.remove("invisible");
 }
 function idUnBlur(){
     document.getElementsByClassName("landscape-id-title-div").item(0).classList.add("unBlur");
+    document.getElementsByClassName("coming-soon").item(0).classList.add("unBlur");
+    document.getElementsByClassName("coming-soon").item(0).classList.remove("invisible");
 }
 function gdMoreBlur(){
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add("moreBlur");
@@ -369,7 +386,6 @@ function euhFocus(inp){
         document.getElementsByClassName("gd-example-div-3").item(0).classList.remove("moreBlur");
         document.getElementsByClassName("gd-example-div-4").item(0).classList.remove("moreBlur");
         document.getElementsByClassName("gd-example-div-5").item(0).classList.remove("moreBlur");
-
     } else if (inp === 0) {
         returnBlur();
     }

@@ -47,10 +47,12 @@ html{
     position: relative;
     width: 290px;
     height: 290px;
-    transform: translateX(41.5vw) translateY(38vh) scale(1);
-    transition-duration: 0.7s, 0.7s;
-    transition-property: transform, -webkit-filter;
-    transition-timing-function: ease, ease;
+    transform: translateX(50vw) translateY(50vh) scale(1);
+    margin-top: -145px;
+    margin-left: -145px;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transition-property: transform, -webkit-filter, margin-left, margin-top;
+    transition-timing-function: ease, ease, ease, ease;
     -webkit-filter: blur(5px);
     visibility: visible;
     opacity: 1;
@@ -59,12 +61,15 @@ html{
 .logo-move{
     transform: translateX(0) translateY(0) scale(1);
     width: 145px;
+    margin-top: 0;
+    margin-left: -5px;
+    margin-right: -10px;
     height: 100%;
 }
 .logo-svg{
     position: relative;
     /*padding: 30px 40px 30px 30px;*/
-    padding: 20% 30% 20% 20%;
+    padding: 25% 25% 25% 25%;
     height: 100%;
     stroke: black;
     fill: black;
@@ -85,8 +90,12 @@ html{
 .click {
     position: absolute;
     width: 150px;
-    left: 46.7vw;
-    top: 55vh;
+    height: 50px;
+    top: 50vh;
+    left: 50vw;
+    margin-top: 80px;
+    margin-left: -75px;
+    text-align: center;
     transition-duration: 2.5s, 0.7s;
     transition-property: -webkit-filter, opacity;
     transition-timing-function: ease, ease;
@@ -268,6 +277,22 @@ html{
     height: 70%;
 }
 /* End Sections */
+.coming-soon {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -25px;
+    margin-left: -75px;
+    text-align: center;
+    transition-duration: 0.7s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, opacity, visibility;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    opacity: 1;
+    font-size: 13px;
+}
 /* Text */
 h1{
     font-family: 'Red Hat Display', sans-serif;
@@ -283,7 +308,6 @@ h2{
 /*Modification Classes */
 .unBlur{
     -webkit-filter: blur(0px);
-    z-index: 0;
 }
 .blur{
     -webkit-filter: blur(5px);
