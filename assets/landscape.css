@@ -18,6 +18,9 @@ html{
     height: 100%;
     z-index: 0;
 }
+#content {
+    height: 100%;
+}
 /* End Set Up*/
 /* Header */
 #header{
@@ -276,6 +279,51 @@ html{
     width: 80%;
     height: 70%;
 }
+.gd-osb-description {
+    position: absolute;
+    top: 55vh;
+    left: 65vw;
+    min-width: 380px;
+    width: 27vw;
+    font-size: 13px;
+    line-height: 20px;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+}
+.gd-euh-description {
+    position: absolute;
+    top: 15vh;
+    left: 55vw;
+    min-width: 380px;
+    width: 27vw;
+    font-size: 13px;
+    line-height: 20px;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+}
+.gd-description {
+    position: absolute;
+    top: 15vh;
+    left: 55vw;
+    min-width: 380px;
+    width: 27vw;
+    font-size: 13px;
+    line-height: 20px;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+}
 /* End Sections */
 .coming-soon {
     position: absolute;
@@ -286,7 +334,7 @@ html{
     margin-top: -25px;
     margin-left: -75px;
     text-align: center;
-    transition-duration: 0.7s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.3s, 0.3s;
     transition-property: -webkit-filter, opacity, visibility;
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(5px);
