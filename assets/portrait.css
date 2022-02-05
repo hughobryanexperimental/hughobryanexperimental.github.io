@@ -57,7 +57,7 @@ html{
     height: 145px;
     transform: translateX(0vw) translateY(0vh) scale(1);
     margin-top: 0;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 10px;
     transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
     transition-property: transform, -webkit-filter, margin-left, margin-top;
@@ -90,9 +90,6 @@ html{
     display: flex;
     align-items: center;
     left: 300%;
-    transition-duration: 0.3s, 0.7s, 0.7s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
