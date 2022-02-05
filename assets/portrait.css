@@ -1,18 +1,28 @@
 /* Set Up */
 *{
     box-sizing: border-box;
+    cursor: default;
 }
 
 html,body{
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+body {
+    overflow: hidden;
 }
 html{
-    width: 400%;
-    /*background-color: aqua;*/
+    width: 200vw;
+    background-color: white;
     opacity: 1;
+
 }
 #container {
+    height: 100%;
+    z-index: 0;
+}
+#content {
     height: 100%;
 }
 /* End Set Up*/
@@ -26,138 +36,115 @@ html{
     height: 12%;
     min-width: 492px;
     min-height: 144.8px;
+    z-index: 2;
 }
 #brand{
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: black;
     transition-property: color;
     width: 50%;
-    min-width: 415px;
+    min-width: 450px;
+    height: 100%;
+    z-index: 2;
+}
+.logo-div{
+    position: relative;
+    width: 145px;
+    min-width: 145px;
+    height: 145px;
+    transform: translateX(0vw) translateY(0vh) scale(1);
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 10px;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transition-property: transform, -webkit-filter, margin-left, margin-top;
+    transition-timing-function: ease, ease, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+.logo-move{
+    transform: translateX(0) translateY(0) scale(1);
+    width: 145px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 10px;
     height: 100%;
 }
-#logo{
-    height: 100%;
-    width: auto;
-}
-#logo-svg{
+.logo-svg{
+    position: relative;
     /*padding: 30px 40px 30px 30px;*/
-    padding: 20% 30% 20% 20%;
+    padding: 20% 20% 20% 20%;
     height: 100%;
     stroke: black;
     fill: black;
+    z-index: 2;
 }
-#name {
+.name {
     height: 100%;
+    min-width: 220px;
     display: flex;
     align-items: center;
     left: 300%;
-}
-#portrait-sections{
-    display: flex;
-    align-items: center;
-    min-width: 170px;
-}
-.portrait-sections-button-1 {
-    position: fixed;
-    background-color: inherit;
-    z-index: 3;
-    fill: white;
-    width: 60px;
-    height: 60px;
-    right: 10vw;
-}
-.portrait-sections-button-2{
-    position: fixed;
-    align-items: center;
-    z-index: 3;
-    width: 60px;
-    height: 60px;
-    right: 10vw;
-}
-#portrait-sections-menu {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    justify-content: center;
-    z-index: 10;
-}
-.portrait-sections-menu-visible {
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(0px);
     visibility: visible;
-    display: flex;
     opacity: 1;
-    transition-duration: 0.3s;
 }
-.portrait-sections-menu-invisible {
+.click {
     visibility: hidden;
-    display: none;
-    opacity: 0;
-    transition-duration: 0.3s;
 }
-#portrait-sections-1 {
-    position: fixed;
-    top: 50%;
-    margin-top: -168px;
-    left: 50%;
-    margin-left: -115px;
-    display: flex;
-    justify-content: center;
-    width: 230px;
-}
-#portrait-sections-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 700%;
-}
-.section-title-portrait{
-    font-family: 'Red Hat Display', sans-serif;
-    min-width: 120.67px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    font-size: 30px;
-}
-.section-title-portrait:hover{
-    font-weight: 500;
-    cursor: default;
-}
-#sections-landscape {
-    display: none;
-}
-/* End Header */
-
-/* Sections */
-.gd-example-1-div {
+.mobile-coming-soon {
     position: absolute;
-    width: 14vw;
-    height: 14vh;
-    top: 60%;
-    left: 10%;
-    -webkit-filter: blur(5px);
+    height: 50px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: none;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -25px;
+    margin-left: -200px;
+ }
+#sections-landscape{
+    visibility: hidden;
 }
-.gd-example-1-svg {
-    height: 85%;
+#sections-portrait{
+    visibility: hidden;
+}
+#content {
+    visibility: hidden;
 }
 
-/* End Sections */
-/* Text */
 h1{
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-variant: small-caps;
 }
-/* End Text */
-
+h4{
+    font-family: 'Quatro';
+    font-weight: 300;
+    font-style: italic;
+    line-height: 25px;
+    font-size: 20px;
+}
 /*Modification Classes */
-.unblur{
+.unBlur{
     -webkit-filter: blur(0px);
-    transition-duration: 1s;
+}
+.blur{
+    -webkit-filter: blur(5px);
+}
+.moreBlur{
+    -webkit-filter: blur(15px);
+}
+.invisible {
+    visibility: hidden;
+    opacity: 0;
 }
