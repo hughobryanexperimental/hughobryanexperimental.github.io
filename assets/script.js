@@ -1,9 +1,14 @@
 /* Beginning of Start Up */
-let aspect_ratio = window.innerWidth / window.innerHeight;
 document.getElementsByClassName("logo-svg").item(0).addEventListener('click', startUp);
 document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseenter', logoUnBlur);
 document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseleave', logoBlur);
 
+x = false;
+y = navigator.maxTouchPoints;
+if (navigator.maxTouchPoints > 0) {
+    document.getElementsByClassName("name").item(0).classList.remove("invisible");
+    x = true;
+}
 
 // if (aspect_ratio < (10 / 12)) {
 //     document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
