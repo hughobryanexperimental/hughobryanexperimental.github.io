@@ -20,10 +20,14 @@ html{
 }
 #container {
     height: 100%;
-    z-index: 0;
+
 }
 #content {
     height: 100%;
+    z-index: -2;
+}
+#graphic-design {
+    width: 200vw;
 }
 /* End Set Up*/
 /* Header */
@@ -289,10 +293,69 @@ html{
     width: 80%;
     height: 70%;
 }
-.gd-osb-description {
+.gd-examples-div-678 {
     position: absolute;
+    display: flex;
+    width: 45vw;
+    height: 30vh;
     top: 55vh;
     left: 65vw;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+.gd-example-div-6 {
+    width: 15vw;
+    height: 30vh;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-6 {
+    width: 70%;
+}
+.gd-example-div-7 {
+    width: 15vw;
+    height: 30vh;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-7 {
+    width: 70%;
+}
+.gd-example-div-8 {
+    width: 15vw;
+    height: 30vh;
+    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-8 {
+    width: 70%;
+}
+.gd-osb-description {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
     min-width: 380px;
     width: 27vw;
     transition-duration: 0.3s, 0.3s, 0.3s;
@@ -317,8 +380,8 @@ html{
 }
 .gd-description {
     position: absolute;
-    top: 15vh;
-    left: 55vw;
+    top: 25vh;
+    left: 76vw;
     min-width: 380px;
     width: 27vw;
     transition-duration: 0.3s, 0.3s, 0.3s;
@@ -355,10 +418,10 @@ html{
     transition-property: -webkit-filter, opacity;
     -webkit-filter: blur(5px);
     top: 50%;
-    margin-top: -30vh;
+    margin-top: -20vh;
     left: 117.5vw;
     width: 65vw;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,14 +450,14 @@ h3{
 h4{
     font-family: 'Quatro';
     font-weight: 300;
-    font-style: italic;
+
     line-height: 25px;
     font-size: 20px;
 }
 h5{
     font-family: 'Quatro';
     font-weight: 300;
-    font-style: italic;
+
     line-height: 40px;
     font-size: 25px;
 }
@@ -403,12 +466,15 @@ h5{
 /*Modification Classes */
 .unBlur{
     -webkit-filter: blur(0px);
+
 }
 .blur{
     -webkit-filter: blur(5px);
+
 }
 .moreBlur{
     -webkit-filter: blur(15px);
+
 }
 .invisible {
     visibility: hidden;
