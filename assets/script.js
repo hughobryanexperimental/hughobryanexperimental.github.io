@@ -5,13 +5,13 @@ document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseenter
 document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseleave', logoBlur);
 
 
-if (aspect_ratio < (10 / 12)) {
-    document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
-    document.getElementsByClassName("logo-svg").item(0).removeEventListener('click', startUp);
-    document.getElementsByClassName("logo-svg").item(0).removeEventListener('mouseenter', logoUnBlur);
-    document.getElementsByClassName("logo-svg").item(0).removeEventListener('mouseleave', logoBlur);
-
-}
+// if (aspect_ratio < (10 / 12)) {
+//     document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
+//     document.getElementsByClassName("logo-svg").item(0).removeEventListener('click', startUp);
+//     document.getElementsByClassName("logo-svg").item(0).removeEventListener('mouseenter', logoUnBlur);
+//     document.getElementsByClassName("logo-svg").item(0).removeEventListener('mouseleave', logoBlur);
+//
+// }
 let isLogoMoved = false;
 if (isLogoMoved === false) {
     window.setTimeout(function () {
