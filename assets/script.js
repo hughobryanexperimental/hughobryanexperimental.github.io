@@ -69,6 +69,9 @@ function startUp() {
             document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("invisible");
         }, 1350)
         window.setTimeout(function () {
+            document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("invisible");
+        }, 1400)
+        window.setTimeout(function () {
             document.getElementsByClassName("landscape-gd-title-div").item(0).classList.remove("invisible");
         }, 1200)
         window.setTimeout(function () {
@@ -197,7 +200,6 @@ function gdSvg5UnHover() {
         returnBlur();
     }
 }
-
 /* End of GD SVG 5 */
 
 /* Start of GD SVG 6 */
@@ -262,6 +264,27 @@ function gdSvg8UnHover() {
     }
 }
 /* End of GD SVG 8 */
+
+/* Start of GD SVG 9 */
+function gdSvg9Hover() {
+    whatsHovered = 19;
+    document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('click', euhClick);
+    if (whatsClicked === 0) {
+        euhFocus(1);
+        uiMoreBlur();
+        idMoreBlur();
+        aboutMoreBlur();
+    }
+}
+
+function gdSvg9UnHover() {
+    whatsHovered = 0; //00
+    if (whatsClicked === 0) {
+        document.getElementsByClassName("gd-example-svg-9").item(0).removeEventListener('click', euhClick);
+        returnBlur();
+    }
+}
+/* End of GD SVG 5 */
 
 /* Start of GD Title 10 */
 function gdTitleHover() {
@@ -356,6 +379,7 @@ function osbFocus() {
     document.getElementsByClassName("gd-example-div-3").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-4").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-5").item(0).classList.add("moreBlur");
+    document.getElementsByClassName("gd-example-div-9").item(0).classList.add("moreBlur");
 }
 
 function euhClick() {
@@ -385,6 +409,7 @@ function euhFocus() {
     document.getElementsByClassName("gd-example-div-3").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-4").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-5").item(0).classList.add("unBlur");
+    document.getElementsByClassName("gd-example-div-9").item(0).classList.add("unBlur");
 }
 
 function gdTitleClick() {
@@ -472,9 +497,9 @@ function returnBlur() {
         case 0:
             allBlur();
             removeAllTitleHovers();
-            //removeAllHovers();
+            removeAllHovers();
             addAllTitleHovers();
-            //addAllHovers();
+            addAllHovers();
             removeAllTitleClicks();
             whatsClicked = 0;
             break;
@@ -494,6 +519,7 @@ function allBlur() {
     document.getElementsByClassName("gd-example-div-6").item(0).classList.remove("unBlur");
     document.getElementsByClassName("gd-example-div-7").item(0).classList.remove("unBlur");
     document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("unBlur");
+    document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("unBlur");
     document.getElementsByClassName("coming-soon").item(0).classList.add("invisible");
     document.getElementsByClassName("gd-osb-description").item(0).classList.add("invisible");
     document.getElementsByClassName("gd-euh-description").item(0).classList.add("invisible");
@@ -512,6 +538,7 @@ function removeMoreBlur() {
     document.getElementsByClassName("gd-example-div-6").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("gd-example-div-7").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("moreBlur");
+    document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("about-div").item(0).classList.remove("moreBlur");
 }
 
@@ -525,6 +552,7 @@ function gdUnBlur() {
     document.getElementsByClassName("gd-example-div-6").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-7").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-8").item(0).classList.add("unBlur");
+    document.getElementsByClassName("gd-example-div-9").item(0).classList.add("unBlur");
 }
 
 function uiUnBlur() {
@@ -549,6 +577,7 @@ function gdMoreBlur() {
     document.getElementsByClassName("gd-example-div-6").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-7").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-8").item(0).classList.add("moreBlur");
+    document.getElementsByClassName("gd-example-div-9").item(0).classList.add("moreBlur");
 }
 
 function uiMoreBlur() {
@@ -594,6 +623,9 @@ function removeAllHovers() {
     document.getElementsByClassName("gd-example-svg-7").item(0).removeEventListener('mouseleave', gdSvg7UnHover);
     document.getElementsByClassName("gd-example-svg-8").item(0).removeEventListener('mouseenter', gdSvg8Hover);
     document.getElementsByClassName("gd-example-svg-8").item(0).removeEventListener('mouseleave', gdSvg8UnHover);
+    document.getElementsByClassName("gd-example-svg-9").item(0).removeEventListener('mouseenter', gdSvg9Hover);
+    document.getElementsByClassName("gd-example-svg-9").item(0).removeEventListener('mouseleave', gdSvg9UnHover);
+
 }
 
 function addAllHovers() {
@@ -613,6 +645,8 @@ function addAllHovers() {
     document.getElementsByClassName("gd-example-svg-7").item(0).addEventListener('mouseleave', gdSvg7UnHover);
     document.getElementsByClassName("gd-example-svg-8").item(0).addEventListener('mouseenter', gdSvg8Hover);
     document.getElementsByClassName("gd-example-svg-8").item(0).addEventListener('mouseleave', gdSvg8UnHover);
+    document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('mouseenter', gdSvg9Hover);
+    document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('mouseleave', gdSvg9UnHover);
 
 }
 
@@ -633,6 +667,8 @@ function addAllGdHovers() {
     document.getElementsByClassName("gd-example-svg-7").item(0).addEventListener('mouseleave', gdSvg7UnHover);
     document.getElementsByClassName("gd-example-svg-8").item(0).addEventListener('mouseenter', gdSvg8Hover);
     document.getElementsByClassName("gd-example-svg-8").item(0).addEventListener('mouseleave', gdSvg8UnHover);
+    document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('mouseenter', gdSvg9Hover);
+    document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('mouseleave', gdSvg9UnHover);
 
 }
 
