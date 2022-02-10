@@ -5,6 +5,8 @@ document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseleave
 
 if (navigator.maxTouchPoints > 0) {
     document.getElementsByClassName("name").item(0).classList.remove("invisible");
+    document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
+
     x = true;
 }
 

@@ -97,6 +97,16 @@ html{
 .click {
     visibility: hidden;
 }
+.copyright {
+    position: fixed;
+    bottom: 0;
+    left: 30px;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transition-property: transform, -webkit-filter, opacity, visibility;
+    transition-timing-function: ease, ease, ease, ease;
+    visibility: visible;
+    opacity: 1;
+}
 .mobile-coming-soon {
     position: absolute;
     height: 50px;
