@@ -119,6 +119,16 @@ html{
 .mobile-coming-soon {
     visibility: hidden;
 }
+.copyright {
+    position: fixed;
+    bottom: 0;
+    left: 30px;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transition-property: transform, -webkit-filter, opacity, visibility;
+    transition-timing-function: ease, ease, ease, ease;
+    visibility: visible;
+    opacity: 1;
+}
 #sections-landscape{
     display: flex;
     flex-direction: row;
@@ -196,8 +206,8 @@ html{
     position: absolute;
     width: 20vw;
     height: 25vh;
-    top: 60%;
-    left: 7%;
+    top: 20vh;
+    left: 80vw;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -216,8 +226,8 @@ html{
     position: absolute;
     width: 28vw;
     height: 28vh;
-    top: 10%;
-    left: 45%;
+    top: 12vh;
+    left: 45vw;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -238,8 +248,8 @@ html{
     position: absolute;
     width: 23vw;
     height: 13vh;
-    top: 45%;
-    left: 30%;
+    top: 45vh;
+    left: 30vw;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -257,8 +267,8 @@ html{
     position: absolute;
     width: 18vw;
     height: 21vh;
-    top: 70%;
-    left: 35%;
+    top: 70vh;
+    left: 37vw;
     transition-duration: 0.3s, 0.7s, 0.7s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
@@ -356,8 +366,8 @@ html{
     position: absolute;
     width: 22vw;
     height: 15vw;
-    top: 20vh;
-    left: 80vw;
+    top: 60vh;
+    left: 7vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -373,9 +383,6 @@ html{
     width: 70%;
 }
 .gd-osb-description {
-    position: absolute;
-    top: 20vh;
-    left: 10vw;
     min-width: 380px;
     width: 27vw;
     transition-duration: 0.3s, 0.7s, 0.3s;
@@ -385,10 +392,15 @@ html{
     visibility: visible;
     opacity: 1;
 }
+.gd-osb-description-left {
+    position: absolute;
+    top: 18vh;
+    left: 12vw;
+}
 .gd-euh-description {
     position: absolute;
     top: 15vh;
-    left: 55vw;
+    left: 62vw;
     min-width: 380px;
     width: 27vw;
     transition-duration: 0.3s, 0.7s, 0.3s;
@@ -439,16 +451,15 @@ html{
     -webkit-filter: blur(5px);
     top: 50%;
     margin-top: -20vh;
-    left: 117.5vw;
-    width: 65vw;
+    left: 130vw;
+    min-width: 380px;
+    width: 40vw;
     height: 40vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 #about {
-    position: relative;
-    text-align: justify;
     width: 70%;
 }
 /* Text */
@@ -468,6 +479,7 @@ h3{
     line-height: 100px;
 }
 h4{
+    text-align: justify;
     font-family: 'Quatro';
     font-weight: 300;
 

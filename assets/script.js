@@ -41,6 +41,7 @@ function startUp() {
         document.getElementsByClassName("logo-div").item(0).classList.add("logo-move");
         document.getElementsByClassName("logo-div").item(0).classList.add("unBlur");
         document.getElementsByClassName("click").item(0).classList.add("noOpacity");
+        document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
         window.setTimeout(function () {
             document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
         }, 800);
@@ -51,7 +52,7 @@ function startUp() {
             document.getElementsByClassName("gd-example-div-2").item(0).classList.remove("invisible");
         }, 1000)
         window.setTimeout(function () {
-            document.getElementsByClassName("gd-example-div-1").item(0).classList.remove("invisible");
+            document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("invisible");
         }, 1000)
         window.setTimeout(function () {
             document.getElementsByClassName("gd-example-div-3").item(0).classList.remove("invisible");
@@ -69,7 +70,7 @@ function startUp() {
             document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("invisible");
         }, 1350)
         window.setTimeout(function () {
-            document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("invisible");
+            document.getElementsByClassName("gd-example-div-1").item(0).classList.remove("invisible");
         }, 1400)
         window.setTimeout(function () {
             document.getElementsByClassName("landscape-gd-title-div").item(0).classList.remove("invisible");
