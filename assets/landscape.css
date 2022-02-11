@@ -384,8 +384,8 @@ html{
 }
 .gd-osb-description-left {
     position: absolute;
-    top: 18vh;
-    left: 12vw;
+    top: 19vh;
+    left: 11.5vw;
     min-width: 200px;
     width: 27vw;
     transition-duration: 0.3s, 0.7s, 0.3s;
@@ -398,7 +398,7 @@ html{
 }
 .gd-osb-description-right {
     position: absolute;
-    top: 18vh;
+    top: 19vh;
     left: 120vw;
     min-width: 200px;
     width: 27vw;
