@@ -382,7 +382,10 @@ html{
 .gd-example-svg-9 {
     width: 70%;
 }
-.gd-osb-description {
+.gd-osb-description-left {
+    position: absolute;
+    top: 18vh;
+    left: 12vw;
     min-width: 380px;
     width: 27vw;
     transition-duration: 0.3s, 0.7s, 0.3s;
@@ -392,10 +395,18 @@ html{
     visibility: visible;
     opacity: 1;
 }
-.gd-osb-description-left {
+.gd-osb-description-right {
     position: absolute;
     top: 18vh;
-    left: 12vw;
+    left: 120vw;
+    min-width: 380px;
+    width: 27vw;
+    transition-duration: 0.3s, 0.7s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, linear, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
 }
 .gd-euh-description {
     position: absolute;

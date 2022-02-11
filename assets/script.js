@@ -3,10 +3,13 @@ document.getElementsByClassName("logo-svg").item(0).addEventListener('click', st
 document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseenter', logoUnBlur);
 document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseleave', logoBlur);
 
+window.scrollTo(0, 0);
+
+console.log(0)
+console.log(1)
 if (navigator.maxTouchPoints > 0) {
     document.getElementsByClassName("name").item(0).classList.remove("invisible");
     document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
-
     x = true;
 }
 
@@ -357,11 +360,14 @@ function idTitleUnHover() {
 function osbClick() {
     if (whatsClicked === 11) {
         osbFocus();
+        window.removeEventListener('scroll', gdScrollFun);
         whatsClicked = 0; //00
     } else {
         osbFocus();
-        document.getElementsByClassName("gd-osb-description").item(0).classList.remove("invisible");
+        gdScrollFun();
+        window.addEventListener('scroll', gdScrollFun);
         whatsClicked = 11;
+        return window.scrollX;
     }
 
 }
@@ -383,6 +389,18 @@ function osbFocus() {
     document.getElementsByClassName("gd-example-div-4").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-5").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-9").item(0).classList.add("moreBlur");
+}
+
+
+function gdScrollFun() {
+    if (window.scrollX > (0.18 * document.body.clientWidth)){
+        document.getElementsByClassName("gd-osb-description-left").item(0).classList.add('invisible');
+        document.getElementsByClassName("gd-osb-description-right").item(0).classList.remove('invisible');
+    }
+    if (window.scrollX <= (0.18 * document.body.clientWidth)) {
+        document.getElementsByClassName("gd-osb-description-right").item(0).classList.add('invisible');
+        document.getElementsByClassName("gd-osb-description-left").item(0).classList.remove('invisible');
+    }
 }
 
 function euhClick() {
@@ -431,13 +449,11 @@ function gdFocus(inp) {
         aboutMoreBlur();
         document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick)
         document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('click', idTitleClick)
-        document.getElementsByClassName("gd-description").item(0).classList.remove("invisible")
         addAllGdHovers();
         gdUnBlur();
         uiMoreBlur();
         idMoreBlur();
     } else if (inp === 0) {
-        document.getElementsByClassName("gd-description").item(0).classList.add("invisible");
         allBlur();
         gdUnBlur();
         whatsClicked = 0;
@@ -510,6 +526,7 @@ function returnBlur() {
 }
 
 function allBlur() {
+    window.removeEventListener('scroll', gdScrollFun);
     removeMoreBlur();
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.remove("unBlur");
     document.getElementsByClassName("landscape-ui-title-div").item(0).classList.remove("unBlur");
@@ -524,9 +541,9 @@ function allBlur() {
     document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("unBlur");
     document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("unBlur");
     document.getElementsByClassName("coming-soon").item(0).classList.add("invisible");
-    document.getElementsByClassName("gd-osb-description").item(0).classList.add("invisible");
+    document.getElementsByClassName("gd-osb-description-left").item(0).classList.add("invisible");
+    document.getElementsByClassName("gd-osb-description-right").item(0).classList.add("invisible");
     document.getElementsByClassName("gd-euh-description").item(0).classList.add("invisible");
-    document.getElementsByClassName("gd-description").item(0).classList.add("invisible");
 }
 
 function removeMoreBlur() {
