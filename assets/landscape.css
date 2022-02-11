@@ -386,7 +386,7 @@ html{
     position: absolute;
     top: 18vh;
     left: 12vw;
-    min-width: 380px;
+    min-width: 200px;
     width: 27vw;
     transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
@@ -394,12 +394,13 @@ html{
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
+
 }
 .gd-osb-description-right {
     position: absolute;
     top: 18vh;
     left: 120vw;
-    min-width: 380px;
+    min-width: 200px;
     width: 27vw;
     transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
@@ -410,9 +411,9 @@ html{
 }
 .gd-euh-description {
     position: absolute;
-    top: 15vh;
+    top: 17vh;
     left: 62vw;
-    min-width: 380px;
+    min-width: 180px;
     width: 27vw;
     transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
@@ -493,9 +494,8 @@ h4{
     text-align: justify;
     font-family: 'Quatro';
     font-weight: 300;
-
     line-height: 25px;
-    font-size: 20px;
+    font-size: 1vw;
 }
 h5{
     font-family: 'Quatro';
