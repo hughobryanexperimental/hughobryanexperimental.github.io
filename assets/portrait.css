@@ -11,16 +11,17 @@ html,body{
 }
 body {
     overflow: hidden;
+
 }
 html{
     width: 200vw;
-    background-color: white;
-    opacity: 1;
 
+    opacity: 1;
 }
 #container {
     height: 100%;
     z-index: 0;
+
 }
 #content {
     height: 100%;
@@ -154,4 +155,7 @@ h4{
 .invisible {
     visibility: hidden;
     opacity: 0;
+}
+.dark {
+    background-color: black;
 }

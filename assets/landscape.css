@@ -11,10 +11,14 @@ html,body{
 }
 body {
     overflow: hidden;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 html{
     width: 200vw;
-    background-color: white;
+
     opacity: 1;
 
 }
@@ -496,11 +500,11 @@ h4{
     font-weight: 300;
     line-height: 25px;
     font-size: 1vw;
+    color: white;
 }
 h5{
     font-family: 'Quatro';
     font-weight: 300;
-
     line-height: 25px;
     font-size: 20px;
 }
@@ -516,7 +520,7 @@ h5{
 
 }
 .moreBlur{
-    -webkit-filter: blur(15px);
+    -webkit-filter: blur(10px);
 
 }
 .invisible {
@@ -525,4 +529,10 @@ h5{
 }
 .noOpacity {
     opacity: 0;
+}
+.dark {
+    background-color: black;
+}
+.invert {
+    -webkit-filter: invert(100%);
 }
