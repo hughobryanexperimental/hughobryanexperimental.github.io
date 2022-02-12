@@ -56,9 +56,7 @@ html{
 }
 .logo-div{
     position: relative;
-    width: 145px;
-    height: 1450px;
-    min-width: 145px;
+    width: 15vw;
     transform: translateX(50vw) translateY(50vh) scale(1);
     margin-top: -145px;
     margin-left: -145px;
@@ -72,11 +70,9 @@ html{
 }
 .logo-move {
     transform: translateX(0) translateY(0) scale(1);
-    width: 145px;
     margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
-    height: 100%;
 }
 .logo-svg {
     position: relative;
@@ -523,7 +519,6 @@ html{
     opacity: 1;
     display: flex;
     justify-content: flex-end;
-
 }
 
 .gd-description {
@@ -607,11 +602,6 @@ h5{
     font-weight: 300;
     line-height: 25px;
     font-size: 16px;
-}
-@media screen and (max-width: 895px) {
-    h5 {
-        font-size: 1.79vw;
-    }
 }
 /* End Text */
 

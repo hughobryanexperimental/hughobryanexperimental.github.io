@@ -7,11 +7,11 @@ window.scrollTo(0, 0);
 
 console.log(0)
 console.log(1)
-if (navigator.maxTouchPoints > 0) {
+/*if (navigator.maxTouchPoints > 0) {
     document.getElementsByClassName("name").item(0).classList.remove("invisible");
     document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
     x = true;
-}
+}*/
 
 // if (aspect_ratio < (10 / 12)) {
 //     document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
