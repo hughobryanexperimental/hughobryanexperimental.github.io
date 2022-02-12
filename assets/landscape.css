@@ -117,11 +117,7 @@ html{
 .mobile-coming-soon {
     visibility: hidden;
 }
-@media screen and (max-width: 1076px) {
-    .copyright {
-        visibility: hidden;
-    }
-}
+
 .copyright {
     position: fixed;
     bottom: 0;
@@ -489,24 +485,39 @@ html{
     bottom: 0;
     right: 34px;
     width: 936px;
-    transition-duration: 0.3s, 0s, 0.3s;
-    transition-delay: 0s, 0s, 0s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, linear, ease;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
     display: flex;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 1076px) {
+    .gd-osb-description {
+        transform: translateY(-32px);
     }
+}
+
+@media screen and (max-width: 893px) {
+    .gd-osb-description {
+        left: 34px;
+        justify-content: flex-start;
+    }
+}
+
 .gd-euh-description {
     position: fixed;
     bottom: 0;
     right: 34px;
     width: 936px;
-    transition-duration: 0.3s, 0s, 0.3s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, linear, ease;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
@@ -514,6 +525,7 @@ html{
     justify-content: flex-end;
 
 }
+
 .gd-description {
     position: absolute;
     top: 25vh;
@@ -598,7 +610,6 @@ h5{
 }
 @media screen and (max-width: 895px) {
     h5 {
-        left: 34px;
         font-size: 1.79vw;
     }
 }

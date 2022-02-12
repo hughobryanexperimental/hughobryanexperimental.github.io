@@ -20,10 +20,14 @@ html{
 }
 #container {
     height: 100%;
-    z-index: 0;
+
 }
 #content {
     height: 100%;
+    z-index: -2;
+}
+#graphic-design {
+    width: 200vw;
 }
 /* End Set Up*/
 /* Header */
@@ -46,42 +50,39 @@ html{
     color: black;
     transition-property: color;
     width: 50%;
-    min-width: 450px;
+    min-width: 415px;
     height: 100%;
     z-index: 2;
 }
 .logo-div{
     position: relative;
-    width: 145px;
+    width: 290px;
+    height: 290px;
     min-width: 145px;
-    height: 145px;
-    transform: translateX(0vw) translateY(0vh) scale(1);
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transform: translateX(50vw) translateY(50vh) scale(1);
+    margin-top: -145px;
+    margin-left: -145px;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0.3s;
     transition-property: transform, -webkit-filter, margin-left, margin-top;
     transition-timing-function: ease, ease, ease, ease;
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(5px);
     visibility: visible;
     opacity: 1;
     z-index: 2;
 }
-.logo-move{
+.logo-move {
     transform: translateX(0) translateY(0) scale(1);
     width: 145px;
     margin-top: 0;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 10px;
     height: 100%;
 }
-.logo-svg{
+.logo-svg {
     position: relative;
     /*padding: 30px 40px 30px 30px;*/
     padding: 20% 20% 20% 20%;
     height: 100%;
-    stroke: black;
-    fill: black;
     z-index: 2;
 }
 .name {
@@ -90,68 +91,547 @@ html{
     display: flex;
     align-items: center;
     left: 300%;
+    transition-duration: 0.3s, 0.7s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
 }
 .click {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 50vh;
+    left: 50vw;
+    margin-top: 80px;
+    margin-left: -75px;
+    text-align: center;
+    transition-duration: 2.5s, 0.7s;
+    transition-property: -webkit-filter, opacity;
+    transition-timing-function: ease, ease;
+    -webkit-filter: blur(75px);
+    opacity: 1;
+    font-size: 16px;
+}
+.mobile-coming-soon {
     visibility: hidden;
 }
+
 .copyright {
     position: fixed;
     bottom: 0;
     left: 32px;
-    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0s;
     transition-property: transform, -webkit-filter, opacity, visibility;
     transition-timing-function: ease, ease, ease, ease;
+    opacity: 1;
+}
+#sections-landscape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    width: 50%;
+    min-width: 393px;
+    height: 100%;
+    margin-right: 70px;
+}
+.landscape-gd-title-div{
+    width: 170px;
+    height: 100px;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landscape-gd-title {
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.landscape-ui-title-div{
+    width: 170px;
+    height: 100px;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landscape-ui-title{
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.landscape-id-title-div{
+    width: 170px;
+    height: 100px;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landscape-id-title{
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+#portrait-sections-menu, #portrait-sections {
+    display: none;
+}
+/* End Header */
+
+/* Sections */
+.gd-example-div-1 {
+    position: absolute;
+    width: 20vw;
+    height: 25vh;
+    top: 20vh;
+    left: 80vw;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-1 {
+    width: 55%;
+    z-index: 1;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-example-div-2 {
+    position: absolute;
+    width: 28vw;
+    height: 28vh;
+    top: 12vh;
+    left: 45vw;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.gd-example-svg-2 {
+    width: 75%;
+    height: 75%;
+    z-index: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-example-div-3 {
+    position: absolute;
+    width: 23vw;
+    height: 13vh;
+    top: 45vh;
+    left: 30vw;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-3 {
+    width: 75%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-example-div-4 {
+    position: absolute;
+    width: 18vw;
+    height: 21vh;
+    top: 70vh;
+    left: 37vw;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-4 {
+    width: 75%;
+    height: 75%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-example-div-5 {
+    position: absolute;
+    width: 28vw;
+    height: 15vh;
+    top: 23%;
+    left: 5%;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-5 {
+    width: 80%;
+    height: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-examples-div-678 {
+    position: absolute;
+    display: flex;
+    width: 45vw;
+    height: 30vh;
+    top: 55vh;
+    left: 65vw;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+.gd-example-div-6 {
+    width: 15vw;
+    height: 30vh;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-6 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-example-div-7 {
+    width: 15vw;
+    height: 30vh;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-7 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-example-div-8 {
+    width: 15vw;
+    height: 30vh;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gd-example-svg-8 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-example-div-9 {
+    position: absolute;
+    width: 22vw;
+    height: 15vw;
+    top: 60vh;
+    left: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+
+}
+.gd-example-svg-9 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
+.gd-osb-description {
+    position: fixed;
+    bottom: 0;
+    right: 34px;
+    width: 936px;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1076px) {
+    .gd-osb-description {
+        transform: translateY(-32px);
+    }
+}
+
+@media screen and (max-width: 893px) {
+    .gd-osb-description {
+        left: 34px;
+        justify-content: flex-start;
+    }
+}
+
+.gd-euh-description {
+    position: fixed;
+    bottom: 0;
+    right: 34px;
+    width: 936px;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.gd-description {
+    position: absolute;
+    top: 25vh;
+    left: 76vw;
+    min-width: 380px;
+    width: 27vw;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, linear, ease;
+    -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
 }
-.mobile-coming-soon {
-    position: absolute;
+/* End Sections */
+.coming-soon {
+    position: fixed;
+    width: 150px;
     height: 50px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     top: 50vh;
     left: 50vw;
     margin-top: -25px;
-    margin-left: -200px;
- }
-#sections-landscape{
-    visibility: hidden;
+    margin-left: -75px;
+    text-align: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, linear, ease;
+    -webkit-filter: blur(4px);
+    opacity: 1;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#sections-portrait{
-    visibility: hidden;
+.about-div {
+    position: absolute;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-property: -webkit-filter, opacity;
+    -webkit-filter: blur(4px);
+    top: 50%;
+    margin-top: -20vh;
+    left: 130vw;
+    min-width: 380px;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-#content {
-    visibility: hidden;
+.about {
+    width: 70%;
 }
-
+/* Text */
 h1{
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-variant: small-caps;
 }
+h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+h3{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    line-height: 100px;
+}
 h4{
-    font-family: 'Quatro';
+    text-align: justify;
+    font-family: 'Quatro', sans-serif;
     font-weight: 300;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 16px;
 }
+h5{
+    text-align: justify;
+    font-family: 'Quatro', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 16px;
+}
+@media screen and (max-width: 895px) {
+    h5 {
+        font-size: 1.79vw;
+    }
+}
+/* End Text */
+
 /*Modification Classes */
 .unBlur{
     -webkit-filter: blur(0px);
-}
-.blur{
-    -webkit-filter: blur(4px);
+
 }
 .moreBlur{
-    -webkit-filter: blur(10px);
+    -webkit-filter: blur(7px);
+
+}
+.lessOpacity{
+    opacity: 0.8;
 }
 .invisible {
+    transition-delay: 0s, 0.3s, 0s;
     visibility: hidden;
+    opacity: 0;
+}
+.noOpacity {
     opacity: 0;
 }
