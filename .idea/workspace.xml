@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4867981-d3be-42b7-90ee-b15446e48e61" name="Changes" comment="add dark mode flip">
+    <list default="true" id="d4867981-d3be-42b7-90ee-b15446e48e61" name="Changes" comment="remove dark mode flip, reduce and move descriptors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/landscape.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/landscape.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/portrait.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/portrait.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +62,7 @@
       <updated>1644604029069</updated>
       <workItem from="1644604030918" duration="1009000" />
       <workItem from="1644605916292" duration="4365000" />
-      <workItem from="1644696598818" duration="2560000" />
+      <workItem from="1644696598818" duration="3136000" />
     </task>
     <task id="LOCAL-00001" summary="this is another test">
       <created>1644605969062</created>
@@ -102,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644607976753</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove dark mode flip, reduce and move descriptors">
+      <created>1644699268610</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644699268610</updated>
+    </task>
+    <task id="LOCAL-00007" summary="remove dark mode flip, reduce and move descriptors">
+      <created>1644699474506</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644699474506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +135,7 @@
     <MESSAGE value="this is another test" />
     <MESSAGE value="initialization" />
     <MESSAGE value="add dark mode flip" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dark mode flip" />
+    <MESSAGE value="remove dark mode flip, reduce and move descriptors" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove dark mode flip, reduce and move descriptors" />
   </component>
 </project>
