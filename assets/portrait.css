@@ -11,17 +11,16 @@ html,body{
 }
 body {
     overflow: hidden;
-
 }
 html{
     width: 200vw;
-
+    background-color: white;
     opacity: 1;
+
 }
 #container {
     height: 100%;
     z-index: 0;
-
 }
 #content {
     height: 100%;
@@ -120,7 +119,7 @@ html{
     left: 50vw;
     margin-top: -25px;
     margin-left: -200px;
-}
+ }
 #sections-landscape{
     visibility: hidden;
 }
@@ -147,15 +146,12 @@ h4{
     -webkit-filter: blur(0px);
 }
 .blur{
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
 }
 .moreBlur{
-    -webkit-filter: blur(15px);
+    -webkit-filter: blur(10px);
 }
 .invisible {
     visibility: hidden;
     opacity: 0;
-}
-.dark {
-    background-color: black;
 }
