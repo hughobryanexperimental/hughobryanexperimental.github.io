@@ -41,6 +41,7 @@ html{
     min-width: 492px;
     min-height: 144.8px;
     z-index: 2;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 #brand{
     position: relative;
@@ -58,8 +59,8 @@ html{
     position: relative;
     width: 15vw;
     transform: translateX(50vw) translateY(50vh) scale(1);
-    margin-top: -145px;
-    margin-left: -145px;
+    margin-top: -15vw;
+    margin-left: -15vw;
     transition-duration: 0.7s, 0.7s, 0.7s, 0.3s;
     transition-property: transform, -webkit-filter, margin-left, margin-top;
     transition-timing-function: ease, ease, ease, ease;
