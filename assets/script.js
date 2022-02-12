@@ -419,8 +419,8 @@ function osbFocus() {
     idMoreBlur();
     idLessOpacity();
     aboutMoreBlur();
-    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseenter', gdTitleHover);
-    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseleave', gdTitleUnHover);
+    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseenter', gdTitleHover);
+    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseleave', gdTitleUnHover);
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-1").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-2").item(0).classList.add("unBlur");
@@ -454,8 +454,8 @@ function euhFocus() {
     idMoreBlur();
     idLessOpacity();
     aboutMoreBlur();
-    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseenter', gdTitleHover);
-    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseleave', gdTitleUnHover);
+    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseenter', gdTitleHover);
+    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseleave', gdTitleUnHover);
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-1").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-2").item(0).classList.add("moreBlur");
@@ -697,12 +697,12 @@ function removeAllTitleHovers() {
 }
 
 function addAllTitleHovers() {
-    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseenter', gdTitleHover);
-    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseleave', gdTitleUnHover);
-    document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('mouseenter', uiTitleHover);
-    document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('mouseleave', uiTitleUnHover);
-    document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('mouseenter', idTitleHover);
-    document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('mouseleave', idTitleUnHover);
+    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseenter', gdTitleHover);
+    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseleave', gdTitleUnHover);
+    document.getElementsByClassName("landscape-ui-title").item(0).addEventListener('mouseenter', uiTitleHover);
+    document.getElementsByClassName("landscape-ui-title").item(0).addEventListener('mouseleave', uiTitleUnHover);
+    document.getElementsByClassName("landscape-id-title").item(0).addEventListener('mouseenter', idTitleHover);
+    document.getElementsByClassName("landscape-id-title").item(0).addEventListener('mouseleave', idTitleUnHover);
 }
 
 function removeAllHovers() {
