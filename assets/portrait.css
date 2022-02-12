@@ -56,8 +56,8 @@ html{
 }
 .logo-div{
     position: relative;
-    width: 290px;
-    height: 290px;
+    width: 145px;
+    height: 1450px;
     min-width: 145px;
     transform: translateX(50vw) translateY(50vh) scale(1);
     margin-top: -145px;
@@ -484,7 +484,7 @@ html{
     position: fixed;
     bottom: 0;
     right: 34px;
-    width: 936px;
+    width: 912px;
     transition-duration: 0.3s, 0s, 0.3s, 0.3s;
     transition-delay: 0s, 0s, 0s, 0s;
     transition-property: -webkit-filter, visibility, opacity, transform;
@@ -513,7 +513,7 @@ html{
     position: fixed;
     bottom: 0;
     right: 34px;
-    width: 936px;
+    width: 912px;
     transition-duration: 0.3s, 0s, 0.3s, 0.3s;
     transition-delay: 0s, 0s, 0s, 0s;
     transition-property: -webkit-filter, visibility, opacity, transform;
