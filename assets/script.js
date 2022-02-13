@@ -2,15 +2,14 @@ let touches = navigator.maxTouchPoints;
 let isLogoMoved = false;
 let whatsHovered = 0;
 let whatsClicked = 0;
+window.scrollTo(0, 0);
 
+/*Beginning of Desktop UI*/
 if (touches === 0) {
-    /*Beginning of Desktop UI*/
     /* Beginning of Start Up */
     document.getElementsByClassName("logo-svg").item(0).addEventListener('click', startUp);
     document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseenter', logoUnBlur);
     document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseleave', logoBlur);
-
-    window.scrollTo(0, 0);
 
     if (isLogoMoved === false) {
         window.setTimeout(function () {
@@ -39,7 +38,6 @@ if (touches === 0) {
             document.getElementsByClassName("logo-svg").item(0).addEventListener('click', function ers() {
                 window.open("https://www.14ers.com/route.php?route=bros6", '_blank')
             })
-
             document.getElementsByClassName("hoverandclick").item(0).classList.add("noOpacity");
             document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
             window.setTimeout(function () {
@@ -413,7 +411,7 @@ if (touches === 0) {
 /* Start of Mobile UI*/
 if (touches > 0) {
     /* Beginning of Start Up */
-    document.getElementsByClassName("logo-svg").item(0).addEventListener('click', startUp);
+    document.getElementsByClassName("logo-svg").item(0).addEventListener('click', hoverStartUp);
     window.scrollTo(0, 0);
 
     if (isLogoMoved === false) {
@@ -422,7 +420,7 @@ if (touches > 0) {
         }, 3000);
     }
 
-    function startUp() {
+    function hoverStartUp() {
         if (isLogoMoved === false) {
             document.getElementsByClassName("logo-div").item(0).classList.add("logo-move");
             document.getElementsByClassName("logo-div").item(0).classList.add("unBlur");
@@ -529,6 +527,8 @@ function euhClick() {
         whatsClicked = 0; //00
     } else {
         euhFocus();
+        document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseenter', gdTitleHover);
+        document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseleave', gdTitleUnHover);
         document.getElementsByClassName("gd-euh-description").item(0).classList.remove("invisible");
         whatsClicked = 12;
     }
@@ -542,8 +542,6 @@ function euhFocus() {
     idMoreBlur();
     idLessOpacity();
     aboutMoreBlur();
-    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseenter', gdTitleHover);
-    document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseleave', gdTitleUnHover);
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add("unBlur");
     document.getElementsByClassName("gd-example-div-1").item(0).classList.add("moreBlur");
     document.getElementsByClassName("gd-example-div-2").item(0).classList.add("moreBlur");

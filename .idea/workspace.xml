@@ -64,7 +64,7 @@
       <workItem from="1644604030918" duration="1009000" />
       <workItem from="1644605916292" duration="4365000" />
       <workItem from="1644696598818" duration="12893000" />
-      <workItem from="1644724454721" duration="2646000" />
+      <workItem from="1644724454721" duration="3310000" />
     </task>
     <task id="LOCAL-00001" summary="this is another test">
       <created>1644605969062</created>
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644727598442</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="testing mobile">
+      <created>1644728672640</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1644728672640</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +273,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/assets/script.js</url>
-          <line>840</line>
+          <line>837</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
