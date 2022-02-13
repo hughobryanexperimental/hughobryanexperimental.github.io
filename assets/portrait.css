@@ -119,7 +119,7 @@ html{
     visibility: visible;
     opacity: 1;
 }
-.click {
+.hoverandclick {
     position: absolute;
     width: 150px;
     height: 50px;
@@ -127,6 +127,22 @@ html{
     left: 50vw;
     margin-top: 80px;
     margin-left: -75px;
+    text-align: center;
+    transition-duration: 2.5s, 0.7s;
+    transition-property: -webkit-filter, opacity;
+    transition-timing-function: ease, ease;
+    -webkit-filter: blur(75px);
+    opacity: 1;
+    font-size: 16px;
+}
+.tap {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50vh;
+    left: 50vw;
+    margin-top: 80px;
+    margin-left: -25px;
     text-align: center;
     transition-duration: 2.5s, 0.7s;
     transition-property: -webkit-filter, opacity;
@@ -625,6 +641,12 @@ h4{
 }
 h5{
     text-align: justify;
+    font-family: 'Quatro', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 16px;
+}
+h6{
     font-family: 'Quatro', sans-serif;
     font-weight: 300;
     line-height: 25px;
