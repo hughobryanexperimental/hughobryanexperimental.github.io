@@ -586,11 +586,11 @@ html{
     transition-timing-function: ease, ease;
     transition-property: -webkit-filter, opacity;
     -webkit-filter: blur(4px);
-    top: 50%;
+    top: 120vh;
     margin-top: -20vh;
-    left: 130vw;
-    min-width: 380px;
-    width: 40vw;
+    left: 50vw;
+    margin-left: -40vw;
+    width: 80vw;
     height: 40vh;
     display: flex;
     justify-content: space-around;
