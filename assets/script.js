@@ -402,7 +402,6 @@ if (touches === 0) {
 if (navigator.maxTouchPoints > 0) {
     /* Beginning of Start Up */
     document.getElementsByClassName("logo-svg").item(0).addEventListener('click', startUp);
-
     window.scrollTo(0, 0);
 
     if (isLogoMoved === false) {

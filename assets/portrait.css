@@ -82,8 +82,8 @@ html{
     position: relative;
     width: 12vw;
     transform: translateX(50vw) translateY(50vh) scale(1);
-    margin-top: -7.5vw;
-    margin-left: -7.5vw;
+    margin-top: -6vw;
+    margin-left: -6vw;
     transition-duration: 0.7s, 0.7s, 0.7s, 0.3s;
     transition-property: transform, -webkit-filter, margin-left, margin-top;
     transition-timing-function: ease, ease, ease, ease;
@@ -135,6 +135,7 @@ html{
     opacity: 1;
     font-size: 16px;
 }
+
 .tap {
     position: absolute;
     width: 50px;
