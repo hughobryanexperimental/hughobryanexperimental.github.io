@@ -19,25 +19,7 @@ html{
 
 }
 #container {
-    height: 100%;
-
 }
-#content {
-    top: 12%;
-    position: relative;
-    height: 80%;
-    z-index: -2;
-}
-#bottom{
-    visibility: hidden;
-    height: 8%;
-    background-color: #3d8dae;
-}
-#graphic-design {
-    width: 200vw;
-}
-/* End Set Up*/
-/* Header */
 #header{
     display: flex;
     flex-direction: row;
@@ -49,6 +31,23 @@ html{
     min-height: 144.8px;
     z-index: 2;
 }
+#content {
+    top: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+#bottom{
+    position: fixed;
+    bottom: 0;
+    height: 144.8px;
+    width: 100%;
+    z-index: 5;
+}
+#graphic-design {
+    width: 200vw;
+}
+/* End Set Up*/
+/* Header */
 
 #brand{
     position: relative;
