@@ -458,6 +458,7 @@ if (touches > 0) {
             }, 1350)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-1").item(0).classList.remove("invisible");
+                document.getElementsByClassName("gd-example-svg-1").item(0).addEventListener("click", osbClick);
             }, 1400)
             addAllClicks();
             addAllTitleClicks();
@@ -496,7 +497,6 @@ function osbClick() {
         document.getElementsByClassName("gd-osb-description").item(0).classList.remove("invisible");
         whatsClicked = 11;
     }
-
 }
 
 function osbFocus() {
@@ -640,10 +640,6 @@ function returnBlur() {
     }
     if (touches > 0) {
         allBlur();
-        removeAllTitleClicks();
-        removeAllClicks();
-        addAllTitleClicks();
-        addAllClicks();
         whatsClicked = 0;
     }
 }
@@ -857,9 +853,9 @@ function addAllHovers() {
 }
 
 function addAllClicks() {
-    document.getElementsByClassName("gd-example-svg-1").item(0).addEventListener('click', osbClick);
-    document.getElementsByClassName("gd-example-div-2").item(0).addEventListener('click', osbClick);
-    document.getElementsByClassName("gd-example-div-3").item(0).addEventListener('click', euhClick);
+    document.getElementsByClassName("gd-example-svg-1").item(0).addEventListener('touchstart', osbClick, true);
+    document.getElementsByClassName("gd-example-svg-2").item(0).addEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-svg-3").item(0).addEventListener('click', euhClick);
     document.getElementsByClassName("gd-example-div-4").item(0).addEventListener('click', euhClick);
     document.getElementsByClassName("gd-example-div-5").item(0).addEventListener('click', euhClick);
     document.getElementsByClassName("gd-example-div-6").item(0).addEventListener('click', osbClick);
