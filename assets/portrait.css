@@ -143,7 +143,6 @@ html{
     top: 50vh;
     left: 50vw;
     margin-top: 80px;
-    margin-left: -25px;
     text-align: center;
     transition-duration: 2.5s, 0.7s;
     transition-property: -webkit-filter, opacity;
@@ -648,6 +647,7 @@ h5{
     font-size: 16px;
 }
 h6{
+    text-align: center;
     font-family: 'Quatro', sans-serif;
     font-weight: 300;
     line-height: 25px;
