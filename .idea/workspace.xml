@@ -64,7 +64,7 @@
       <workItem from="1644604030918" duration="1009000" />
       <workItem from="1644605916292" duration="4365000" />
       <workItem from="1644696598818" duration="12893000" />
-      <workItem from="1644724454721" duration="1650000" />
+      <workItem from="1644724454721" duration="2646000" />
     </task>
     <task id="LOCAL-00001" summary="this is another test">
       <created>1644605969062</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644724690371</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="testing mobile">
+      <created>1644727598442</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1644727598442</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,5 +260,17 @@
     <MESSAGE value="add descriptor scaling and changed title hit boxes" />
     <MESSAGE value="testing mobile" />
     <option name="LAST_COMMIT_MESSAGE" value="testing mobile" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/script.js</url>
+          <line>840</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

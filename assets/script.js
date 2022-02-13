@@ -411,7 +411,7 @@ if (touches === 0) {
 
 
 /* Start of Mobile UI*/
-if (navigator.maxTouchPoints > 0) {
+if (touches > 0) {
     /* Beginning of Start Up */
     document.getElementsByClassName("logo-svg").item(0).addEventListener('click', startUp);
     window.scrollTo(0, 0);
@@ -429,8 +429,7 @@ if (navigator.maxTouchPoints > 0) {
             document.getElementsByClassName("logo-svg").item(0).addEventListener('click', function ers() {
                 window.open("https://www.14ers.com/route.php?route=bros6", '_blank')
             })
-
-            document.getElementsByClassName("hoverandclick").item(0).classList.add("noOpacity");
+            document.getElementsByClassName("tap").item(0).classList.add("noOpacity");
             document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
             window.setTimeout(function () {
                 document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
@@ -492,7 +491,7 @@ if (navigator.maxTouchPoints > 0) {
 /* Start of Helper Functions */
 function osbClick() {
     if (whatsClicked === 11) {
-        //osbFocus();
+        osbFocus();
         whatsClicked = 0; //00
     } else {
         osbFocus();
@@ -642,16 +641,12 @@ function returnBlur() {
         }
     }
     if (touches > 0) {
-        switch (whatsHovered) {
-            case 0:
-                allBlur();
-                removeAllTitleClicks();
-                removeAllClicks();
-                addAllTitleClicks();
-                addAllClicks();
-                whatsClicked = 0;
-                break;
-        }
+        allBlur();
+        removeAllTitleClicks();
+        removeAllClicks();
+        addAllTitleClicks();
+        addAllClicks();
+        whatsClicked = 0;
     }
 }
 
@@ -861,7 +856,30 @@ function addAllHovers() {
     document.getElementsByClassName("gd-example-svg-8").item(0).addEventListener('mouseleave', gdSvg8UnHover);
     document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('mouseenter', gdSvg9Hover);
     document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('mouseleave', gdSvg9UnHover);
+}
 
+function addAllClicks() {
+    document.getElementsByClassName("gd-example-svg-1").item(0).addEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-2").item(0).addEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-3").item(0).addEventListener('click', euhClick);
+    document.getElementsByClassName("gd-example-div-4").item(0).addEventListener('click', euhClick);
+    document.getElementsByClassName("gd-example-div-5").item(0).addEventListener('click', euhClick);
+    document.getElementsByClassName("gd-example-div-6").item(0).addEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-7").item(0).addEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-8").item(0).addEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-9").item(0).addEventListener('click', euhClick);
+}
+
+function removeAllClicks() {
+    document.getElementsByClassName("gd-example-div-1").item(0).removeEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-2").item(0).removeEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-3").item(0).removeEventListener('click', euhClick);
+    document.getElementsByClassName("gd-example-div-4").item(0).removeEventListener('click', euhClick);
+    document.getElementsByClassName("gd-example-div-5").item(0).removeEventListener('click', euhClick);
+    document.getElementsByClassName("gd-example-div-6").item(0).removeEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-7").item(0).removeEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-8").item(0).removeEventListener('click', osbClick);
+    document.getElementsByClassName("gd-example-div-9").item(0).removeEventListener('click', euhClick);
 }
 
 function addAllGdHovers() {
