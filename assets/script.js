@@ -411,7 +411,14 @@ if (touches === 0) {
 /* Start of Mobile UI*/
 if (touches > 0) {
     /* Beginning of Start Up */
-    document.getElementsByClassName("logo-svg").item(0).addEventListener('click', hoverStartUp);
+    $(".logo-svg").click( function(){
+        hoverStartUp();
+        console.log("1");
+    });
+    $(".gd-example-svg-1").on("tap",function(){
+        return true;
+    });
+    //document.getElementsByClassName("logo-svg").item(0).addEventListener('click', hoverStartUp);
     window.scrollTo(0, 0);
 
     if (isLogoMoved === false) {
@@ -853,8 +860,10 @@ function addAllHovers() {
 }
 
 function addAllClicks() {
-    document.getElementsByClassName("gd-example-svg-1").item(0).addEventListener('touchstart', osbClick, true);
-    document.getElementsByClassName("gd-example-svg-2").item(0).addEventListener('click', osbClick);
+    $(function(){
+        $(".gd-example-svg-1").on( "tap", osbClick);
+    });
+    document.getElementsByClassName("gd-example-svg-2").item(0).addEventListener('touchend', osbFocus);
     document.getElementsByClassName("gd-example-svg-3").item(0).addEventListener('click', euhClick);
     document.getElementsByClassName("gd-example-div-4").item(0).addEventListener('click', euhClick);
     document.getElementsByClassName("gd-example-div-5").item(0).addEventListener('click', euhClick);

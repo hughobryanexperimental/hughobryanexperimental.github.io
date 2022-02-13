@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4867981-d3be-42b7-90ee-b15446e48e61" name="Changes" comment="testing mobile">
+      <change afterPath="$PROJECT_DIR$/assets/jquery-3.6.0.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/portrait.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/portrait.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <workItem from="1644604030918" duration="1009000" />
       <workItem from="1644605916292" duration="4365000" />
       <workItem from="1644696598818" duration="12893000" />
-      <workItem from="1644724454721" duration="4936000" />
+      <workItem from="1644724454721" duration="7974000" />
     </task>
     <task id="LOCAL-00001" summary="this is another test">
       <created>1644605969062</created>
@@ -248,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644729294385</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="testing mobile">
+      <created>1644731193657</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1644731193657</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +289,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/assets/script.js</url>
-          <line>833</line>
+          <line>840</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
