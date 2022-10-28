@@ -48,8 +48,8 @@ html{
     width: 200vw;
 }
 /* End Set Up*/
-/* Header */
 
+/* Header */
 #brand{
     position: relative;
     display: flex;
@@ -95,7 +95,7 @@ html{
 }
 .name {
     height: 100%;
-    min-width: 220px;
+    min-width: 232px;
     display: flex;
     align-items: center;
     left: 300%;
@@ -115,7 +115,7 @@ html{
     margin-top: 80px;
     margin-left: -75px;
     text-align: center;
-    transition-duration: 2.5s, 0.7s;
+    transition-duration: 2s, 2s;
     transition-property: -webkit-filter, opacity;
     transition-timing-function: ease, ease;
     -webkit-filter: blur(75px);
@@ -141,12 +141,11 @@ html{
 .mobile-coming-soon {
     visibility: hidden;
 }
-
 .copyright {
     position: fixed;
     bottom: 0;
     left: 32px;
-    transition-duration: 0.7s, 0.7s, 0.7s, 0s;
+    transition-duration: 0.3s, 0.3s, 0.3s, 0s;
     transition-property: transform, -webkit-filter, opacity, visibility;
     transition-timing-function: ease, ease, ease, ease;
     opacity: 1;
@@ -259,10 +258,10 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-1 {
     width: 55%;
@@ -275,7 +274,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-2 {
     position: absolute;
@@ -288,11 +287,12 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-2 {
     width: 75%;
@@ -322,6 +322,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-3 {
     width: 75%;
@@ -333,7 +334,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-4 {
     position: absolute;
@@ -346,10 +347,10 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-4 {
     width: 75%;
@@ -362,7 +363,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-5 {
     position: absolute;
@@ -378,10 +379,10 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-5 {
     width: 80%;
-    height: 70%;
     transition-property: opacity;
     transition-duration: 0.3s;
     transition-timing-function: ease;
@@ -390,7 +391,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-examples-div-678 {
     position: absolute;
@@ -414,6 +415,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-6 {
     width: 70%;
@@ -425,7 +427,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-7 {
     width: 15vw;
@@ -438,6 +440,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-7 {
     width: 70%;
@@ -449,7 +452,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-8 {
     width: 15vw;
@@ -462,6 +465,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-8 {
     width: 70%;
@@ -473,7 +477,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-9 {
     position: absolute;
@@ -490,7 +494,7 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-9 {
     width: 70%;
@@ -502,8 +506,94 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
+.gd-example-div-10 {
+    position: absolute;
+    width: 16vw;
+    height: 20vw;
+    top: 60vh;
+    left: 120vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    -webkit-transform: translate3d(0,0,0);
+}
+.gd-example-svg-10 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,0);
+}
+.gd-example-div-11 {
+    position: absolute;
+    width: 25vw;
+    top: 20vh;
+    left: 108vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    -webkit-transform: translate3d(0,0,0);
+}
+.gd-example-svg-11 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,0);
+}
+.gd-example-div-12 {
+    position: absolute;
+    height: 100vh;
+    top: 0vh;
+    left: 144vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    -webkit-transform: translate3d(0,0,0);
+}
+.gd-example-svg-12 {
+    height: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,0);
+}
+
 .gd-osb-description {
     position: fixed;
     bottom: 0;
@@ -519,20 +609,17 @@ html{
     display: flex;
     justify-content: flex-end;
 }
-
 @media screen and (max-width: 1076px) {
     .gd-osb-description {
         transform: translateY(-32px);
     }
 }
-
 @media screen and (max-width: 893px) {
     .gd-osb-description {
         left: 34px;
         justify-content: flex-start;
     }
 }
-
 .gd-euh-description {
     position: fixed;
     bottom: 0;
@@ -547,22 +634,23 @@ html{
     opacity: 1;
     display: flex;
     justify-content: flex-end;
-
 }
-
-.gd-description {
-    position: absolute;
-    top: 25vh;
-    left: 76vw;
-    min-width: 380px;
-    width: 27vw;
-    transition-duration: 0.3s, 0s, 0.3s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, linear, ease;
+.gd-misc-description {
+    position: fixed;
+    bottom: 0;
+    right: 34px;
+    width: 936px;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
+    display: flex;
+    justify-content: flex-end;
 }
+
 /* End Sections */
 .coming-soon {
     position: fixed;
@@ -576,7 +664,6 @@ html{
     transition-duration: 0.3s, 0s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, linear, ease;
-    -webkit-filter: blur(4px);
     opacity: 1;
     font-size: 20px;
     display: flex;
@@ -585,13 +672,14 @@ html{
 }
 .about-div {
     position: absolute;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: ease, ease;
-    transition-property: -webkit-filter, opacity;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, linear, ease;
+    opacity: 1;
     -webkit-filter: blur(4px);
     top: 50%;
     margin-top: -20vh;
-    left: 130vw;
+    left: 155vw;
     min-width: 380px;
     width: 40vw;
     height: 40vh;
@@ -600,7 +688,7 @@ html{
     align-items: center;
 }
 .about {
-    width: 70%;
+    width: 30vw;
 }
 /* Text */
 h1{
@@ -611,7 +699,7 @@ h1{
 h2{
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 15px;
 }
 h3{
     font-family: 'Red Hat Display', sans-serif;
@@ -648,11 +736,9 @@ h6{
 /*Modification Classes */
 .unBlur{
     -webkit-filter: blur(0px);
-
 }
 .moreBlur{
     -webkit-filter: blur(7px);
-
 }
 .lessOpacity{
     opacity: 0.8;
